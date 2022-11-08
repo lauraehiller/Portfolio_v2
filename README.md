@@ -2,4 +2,7 @@
 
 ## Build With
 
-- React-three/drei
+- React
+- Three.js
+- Sass
+- TypeScript

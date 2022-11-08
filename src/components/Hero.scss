@@ -1,0 +1,42 @@
+@import '../index.scss';
+
+.hero {
+    margin: 0;
+    padding: 0vmin 30vmin 0vmin 30vmin;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      
+      .image-wrap {
+        display: flex;
+        justify-content: center;
+      }
+      
+      img {
+        margin: 2vmin;
+        width: 15%;
+        height: auto;
+      }
+      
+      h1 {
+        font-size: 20vmin;
+        color: $Light-Purple;
+        margin: 0vmin 0 -5vmin 0;
+        line-height: normal;
+      }
+      
+      p {
+        font-size: 5vmin;
+        color: $White;
+      }
+  }
+  
+  

@@ -1,0 +1,27 @@
+/*About*/
+
+.about-section{
+    padding: 10vmin 30vmin 10vmin 30vmin;
+    .container {
+      display: grid;
+      grid-template-columns: 7fr 3fr;
+    }
+    
+    .item1 {
+      margin: auto;
+      padding: 5vmin; 
+    }
+    
+    .item2 {
+      padding: 5vmin;
+    }
+    
+    img{
+      width: 60%;
+      height: auto;
+      margin: 1vmin;
+      border: 1px solid var(--Off-White);
+      border-radius: 100%;
+    }
+}
+  
