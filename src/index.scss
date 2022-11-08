@@ -101,6 +101,14 @@ H3: Job titles
 H4: Project titles
 */
 
+h1 {
+  font-family: $Bebas;
+  font-size: 20vmin;
+  color: $Light-Purple;
+  margin: 0vmin 0 -5vmin 0;
+  line-height: normal;
+}
+
 h2 {
   display: flex;
   flex-direction: row;
