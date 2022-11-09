@@ -44,6 +44,28 @@
         display: flex;
         justify-content: left;
     }
+    /*Lists*/
+    ul {
+      margin: 1vmin;
+      list-style-type: none;
+      text-align: left;
+    }
+
+    ul li::before {
+      content: "ᐳ";
+      font-size: 2vmin;
+      color: $Light-Purple;
+      margin: 0vmin 1vmin 0vmin -2vmin;               
+      display: inline-block;
+      width: 1vmin;
+    }
+
+    li {
+      margin: 1vmin;
+      font-size: 2vmin;
+      color: $Light-Gray;
+      font-family: $Montserrat;
+    }
   }
   
   /*.job-wrapper:active {

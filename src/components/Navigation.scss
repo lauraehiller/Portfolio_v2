@@ -1,0 +1,58 @@
+@import '../index.scss';
+
+.hamburger-wrapper {
+    display: flex;
+	@media (min-width: 1024px) {
+		display: none;
+	}
+}
+
+.nav-wrap {
+    height: 106px;
+    //background: $Medium-Purple;
+    position: fixed;
+    transition: top 0.3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+
+    .logo-container {
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+      
+    img {
+        margin-left: 36px;
+        width: auto;
+        height: 36px;
+        @media (min-width: 1024px) {
+            margin-left: 2vmin;
+            height: 5vmin;
+        }
+    }
+
+    .nav-links{
+        display: none;
+        @media (min-width: 1024px) {
+            display: flex;
+        }
+    
+        li {
+            list-style-type: none;
+            margin: 0 1rem;
+        }
+    
+        a {
+            text-decoration: none;
+            color: $White;
+            font-family: $Montserrat;
+            font-size: 2.5vmin;
+        }
+    }
+}
