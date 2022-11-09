@@ -2,7 +2,10 @@
 
 .experience-section {
     margin: 0;
-    padding: 10vmin 30vmin 10vmin 30vmin;
+    padding: 50px 50px 50px 50px;
+    @media (min-width: 1024px) {
+      padding: 50px 250px 50px 250px;
+    }
 
     h1 {
       display: flex;
@@ -35,12 +38,15 @@
     }
     
     .container {
-      margin: 0vmin 15vmin 0vmin 15vmin;
+      margin: 0vmin 5vmin 0vmin 5vmin;
       display: flex;
       flex-direction: column;
       padding: 0vmin 2vmin 0vmin 2vmin;
       justify-content: center;
       text-align: center;
+      @media (min-width: 1024px) {
+        margin: 0px 100px 0px 100px;
+      }
     }
   }
   

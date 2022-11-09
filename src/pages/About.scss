@@ -1,10 +1,18 @@
+@import '../index.scss';
 /*About*/
 
 .about-section{
-    padding: 10vmin 30vmin 10vmin 30vmin;
+  padding: 50px 50px 50px 50px;
+  @media (min-width: 1024px) {
+    padding: 50px 250px 50px 250px;
+  }
     .container {
-      display: grid;
-      grid-template-columns: 7fr 3fr;
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: 7fr 3fr;
+      }
     }
     
     .item1 {
@@ -17,11 +25,11 @@
     }
     
     img{
-      width: 60%;
+      width: 100%;
       height: auto;
       margin: 1vmin;
-      border: 1px solid var(--Off-White);
-      border-radius: 100%;
+      //border-radius: 100%;
+      border-radius: 5px;
     }
 }
   

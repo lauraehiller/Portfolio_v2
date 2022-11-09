@@ -1,7 +1,11 @@
 /*Project*/
 .project-section {
     margin: 0;
-    padding: 10vmin 30vmin 10vmin 30vmin;
+    //padding: 10vmin 30vmin 10vmin 30vmin;
+    padding: 50px 0px 50px 0px;
+    @media (min-width: 1024px) {
+      padding: 50px 250px 50px 250px;
+    }
 
     .container {
       display: flex;

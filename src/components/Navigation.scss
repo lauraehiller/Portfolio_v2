@@ -8,8 +8,8 @@
 }
 
 .nav-wrap {
-    height: 106px;
-    //background: $Medium-Purple;
+    height:70px;
+    background: $Medium-Purple;
     position: fixed;
     transition: top 0.3s;
     top: 0;
@@ -19,6 +19,9 @@
     flex-direction: row;
     align-items: center;
     z-index: 1;
+    @media (min-width: 1024px) {
+        height:50px;
+    }
 
     .logo-container {
         width: 100%;
@@ -33,7 +36,7 @@
         height: 36px;
         @media (min-width: 1024px) {
             margin-left: 2vmin;
-            height: 5vmin;
+            height: 35px;
         }
     }
 

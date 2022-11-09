@@ -8,19 +8,21 @@ function About() {
           <h2>About Me</h2>
           <div className="container">
             <div className="item1">
-              <p>Hi, I'm Laura.  I'm an aspiring Software Devleoper with a creative streak 
-                and a passion for writing <span className="styled-text">reusable and efficient code.</span>  
-                I recently graduated from the University of California, Santa Cruz with a BS in Computer Science.
-                </p>
-                <br/>
-                <p>  
-                I enjoy working at the intersection of <span className="styled-text">art and engineering</span>, designing accessible 
-                  web applications that are visually stunning and easy to use!  
-                </p>
-                <br/>
-                <p>Recently I've been working as a Web Developer for <span className="styled-text">PV Magazine</span>, 
-                and as a Frontend Engineer for <span className="styled-text">SpaceLab.</span></p>
-                <br/>
+              <p>Hi, Laura here. I'm a Software Developer with a creative streak and an aptitude for writing 
+                <span className="styled-text"> reusable and efficient code.  </span>  
+              </p>
+              <br/>
+              <p>  
+              The <span className="styled-text">intersection of art and engineering</span> is where I shine brightest. My goal on every 
+                project is to balance aesthetics, functionality, and performance. The end result? Web 
+                applications that are <span className="styled-text">visually stunning, user-friendly, and efficient.</span>
+              </p>
+              <br/>
+              <p>Recently I have been working as a <span className="styled-text">Web Developer</span> for PV Magazine, and 
+                volunteering as <span className="styled-text">Lead WebGL Dev Intern (Frontend)</span> for SpaceLab.
+              </p>
+              <br/>
+              <button>Contact Me</button>
           </div>
           <div className="item2">
               <div className="flex-center">

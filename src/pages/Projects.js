@@ -15,7 +15,7 @@ function Projects() {
         <h2>Projects</h2>
           <div className="container">
             <ProjectCard 
-              name="SpaceMap"
+              name="Exoplanetarium"
               imgUrl={spacelabImg}
               imgAlt="An image"
               description="A 3D map of the stars plotted with NASA data from the Keplar Mission."
@@ -24,12 +24,21 @@ function Projects() {
               github={true}
             />
             <ProjectCard 
-              name="Portfolio: V2.0"
+              name="Portfolio V2"
               imgUrl={firefliesImg}
               imgAlt="An image"
               description="The second iteration of my portfolio website.  
               Designed to be more accessible, more responsive, and more efficient."
               tools="HTML · CSS · JavaScript · React"
+              projectLink="#"
+              github={true}
+            />
+            <ProjectCard 
+              name="Webstyle"
+              imgUrl={firefliesImg}
+              imgAlt="An image"
+              description="A fun website for trying out different color and font combinations."
+              tools="HTML · CSS · JavaScript"
               projectLink="#"
               github={true}
             />
@@ -40,15 +49,6 @@ function Projects() {
               description="A beautiful 3D world I designed for Computer Graphics.  
               Fun Fact: There are about 12,000 fireflies in this world."
               tools="Three.js · WebGL · Blender · HTML · CSS"
-              projectLink="#"
-              github={true}
-            />
-            <ProjectCard 
-              name="EmpoweredU Website"
-              imgUrl={empoweredImg}
-              imgAlt="An image"
-              description="A user friendly and responsive website that I designed for the client."
-              tools="WordPress · HTML"
               projectLink="#"
               github={true}
             />
@@ -64,7 +64,7 @@ function Projects() {
               github={true}
             />
             <ProjectCard 
-              name="Portfolio: V1.0"
+              name="Portfolio V2"
               imgUrl={websiteImg}
               imgAlt="An image"
               description="My first attempt at coding a portfolio website.  I think my skills have come a long way since then."
@@ -72,6 +72,15 @@ function Projects() {
               projectLink="#"
               github={true}
             />
+            {/*<ProjectCard 
+              name="EmpoweredU"
+              imgUrl={empoweredImg}
+              imgAlt="An image"
+              description="A user friendly and responsive website that I designed for the client."
+              tools="WordPress · HTML"
+              projectLink="#"
+              github={true}
+    />*/}
         </div>
     </section>
     )
