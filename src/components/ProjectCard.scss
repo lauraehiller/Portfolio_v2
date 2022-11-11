@@ -6,7 +6,7 @@
     height: auto;
     margin: 2vmin 8vmin;
     padding: 4vmin;
-    background: $Medium-Purple;
+    background: rgba(41, 15, 82, 1.0);
     justify-content: space-between;
     flex-direction: column;
     display: flex;
@@ -23,6 +23,88 @@
       padding: 2vmin;
     }
 
+    .card-header {
+      padding: 1vmin;
+    }
+    
+    .card-image {
+      width: 100%;
+      height: auto;
+      padding: 2vmin 2vmin 2vmin 2vmin;
+      @media (min-width: 1024px) {
+        padding: 0;
+      }
+    }
+    
+    .card-title {
+      margin: 0 0 2vmin 0;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $Light-Gray;
+  
+      h4 {
+        color: $White;
+        font-family: $Alumni;
+        font-size: 6vmin;
+        padding: 0 0 .1vmin 0vmin;
+  
+        @media (min-width: 1024px) {
+          font-size: 4vmin;
+        }
+      }
+    }
+    
+    .fa-arrow-up-right-from-square {
+      margin: 1vmin;
+      color: $Light-Purple;
+      font-size: 6vmin;
+      @media (min-width: 1024px) {
+        font-size: 3vmin;
+      }
+    }
+    
+    .fa-github {
+      margin: 1vmin;
+      color: $Light-Purple;
+      font-size: 6vmin;
+      @media (min-width: 1024px) {
+        font-size: 3vmin;
+      }
+    }
+    
+    .card-body {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      padding: 1vmin;
+  
+      p {
+          font-size: 4vmin;
+          line-height: 1.3;
+          @media (min-width: 1024px) {
+            font-size: 2vmin;
+          }
+      }
+    }
+    
+    .card-footer {
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+      padding: 3vmin 1vmin 1vmin 1vmin;
+      @media (min-width: 1024px) {
+        padding: 2vmin 1vmin 0vmin 1vmin;
+      }
+  
+      p {
+          color: $White;
+          font-size: 3vmin;
+          @media (min-width: 1024px) {
+            font-size: 1.7vmin;
+          }
+      }
+    }
+
   }
   
   .card:hover {
@@ -30,85 +112,5 @@
     transition: all .3s ease-in-out;
   }
   
-  .card-header {
-    padding: 1vmin;
-  }
   
-  .card-image {
-    width: 100%;
-    height: auto;
-    padding: 2vmin 2vmin 2vmin 2vmin;
-    @media (min-width: 1024px) {
-      padding: 0;
-    }
-  }
-  
-  .card-title {
-    margin: 0 0 2vmin 0;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid $Light-Gray;
-
-    h4 {
-      color: $White;
-      font-family: $Alumni;
-      font-size: 6vmin;
-      padding: 0 0 .1vmin 0vmin;
-
-      @media (min-width: 1024px) {
-        font-size: 4vmin;
-      }
-    }
-  }
-  
-  .fa-arrow-up-right-from-square {
-    margin: 1vmin;
-    color: $Light-Purple;
-    font-size: 6vmin;
-    @media (min-width: 1024px) {
-      font-size: 3vmin;
-    }
-  }
-  
-  .card .fa-github {
-    margin: 1vmin;
-    color: $Light-Purple;
-    font-size: 6vmin;
-    @media (min-width: 1024px) {
-      font-size: 3vmin;
-    }
-  }
-  
-  .card-body {
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    padding: 1vmin;
-
-    p {
-        font-size: 4vmin;
-        line-height: 1.3;
-        @media (min-width: 1024px) {
-          font-size: 2vmin;
-        }
-    }
-  }
-  
-  .card-footer {
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    padding: 3vmin 1vmin 1vmin 1vmin;
-    @media (min-width: 1024px) {
-      padding: 2vmin 1vmin 0vmin 1vmin;
-    }
-
-    p {
-        color: $White;
-        font-size: 4vmin;
-        @media (min-width: 1024px) {
-          font-size: 1.7vmin;
-        }
-    }
-  }
   

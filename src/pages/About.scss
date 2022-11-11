@@ -2,34 +2,49 @@
 /*About*/
 
 .about-section{
-  padding: 50px 50px 50px 50px;
+  padding: 50px 0px 50px 0px;
   @media (min-width: 1024px) {
     padding: 50px 250px 50px 250px;
   }
-    .container {
+    
+  .container {
       display: flex;
       flex-direction: column;
       @media (min-width: 1024px) {
         display: grid;
         grid-template-columns: 7fr 3fr;
       }
-    }
+  }
     
-    .item1 {
+  .item1 {
       margin: auto;
       padding: 5vmin; 
-    }
+  }
     
-    .item2 {
+  .item2 {
       padding: 5vmin;
-    }
+  }
     
-    img{
-      width: 100%;
+  img{
+      width: 50%;
       height: auto;
       margin: 1vmin;
       //border-radius: 100%;
       border-radius: 5px;
-    }
+      @media (min-width: 1024px) {
+        width: 100%;
+      }
+  }
+
+  button {
+    margin: 3vmin 0 0 0;
+    padding: 15px 30px 15px 30px;
+    border: 2px solid $Light-Purple;
+    border-radius: 5px;
+    background-color: transparent;
+    color: $Light-Purple;
+    font-family: $Montserrat;
+    font-size: 2.5vmin;
+  }
 }
   

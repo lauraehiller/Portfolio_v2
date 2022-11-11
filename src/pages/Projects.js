@@ -1,7 +1,8 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard.js';
+import Featured from '../components/Featured.js';
 
-import spacelabImg from '../images/SpaceLab.png';
+//import spacelabImg from '../images/SpaceLab.png';
 import firefliesImg from '../images/Fireflies.jpg';
 import empoweredImg from '../images/EmpoweredU.jpg';
 import sunriseImg from '../images/Sunrise.jpg';
@@ -13,16 +14,10 @@ function Projects() {
     return (
         <section className="project-section">
         <h2>Projects</h2>
-          <div className="container">
-            <ProjectCard 
-              name="Exoplanetarium"
-              imgUrl={spacelabImg}
-              imgAlt="An image"
-              description="A 3D map of the stars plotted with NASA data from the Keplar Mission."
-              tools="HTML · CSS · JavaScript · Three.js"
-              projectLink="#"
-              github={true}
-            />
+        <Featured />
+
+        <div className="container">
+
             <ProjectCard 
               name="Portfolio V2"
               imgUrl={firefliesImg}
@@ -72,7 +67,7 @@ function Projects() {
               projectLink="#"
               github={true}
             />
-            {/*<ProjectCard 
+            <ProjectCard 
               name="EmpoweredU"
               imgUrl={empoweredImg}
               imgAlt="An image"
@@ -80,7 +75,7 @@ function Projects() {
               tools="WordPress · HTML"
               projectLink="#"
               github={true}
-    />*/}
+    />
         </div>
     </section>
     )
