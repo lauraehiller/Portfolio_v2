@@ -3,6 +3,15 @@
     margin: 0;
     //padding: 10vmin 30vmin 10vmin 30vmin;
     padding: 50px 0px 50px 0px;
+    background: radial-gradient(
+      500px 500px at bottom right,  
+      rgba(26, 0, 68, 1.0) 0%, 
+      rgba(20,20,20,0) 100%
+    ), radial-gradient(
+      500px 500px at top left, 
+       rgba(26, 0, 68, 1.0) 0%,
+       rgba(20,20,20,0) 100%
+    );
     @media (min-width: 1024px) {
       padding: 50px 250px 50px 250px;
     }
