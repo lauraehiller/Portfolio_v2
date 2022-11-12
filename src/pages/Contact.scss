@@ -1,0 +1,72 @@
+@import '../index.scss';
+.contact-section{
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+      padding: 50px 250px 50px 250px;
+    }
+
+    .container {
+        margin: 8vmin 15vmin 5vmin 15vmin;
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 1024px) {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .item1 {
+            text-align: center;
+            padding: 0 5vmin 0 5vmin;
+            margin: 0 0 5vmin 0;
+            @media (min-width: 1024px) {
+                margin: 0;
+            }
+
+            p {
+                font-size: 4vmin;
+                margin: 0 0 0 0;
+                @media (min-width: 1024px) {
+                    font-size: 3vmin;
+                }
+            }
+
+            .social-container{
+                display: flex;
+                justify-content: center;
+                .fa-linkedin-in {
+                    margin: 2vmin 2vmin 2vmin 0;
+                    color: $Light-Purple;
+                    font-size: 5vmin;
+                  }
+                  
+                  .fa-github {
+                    margin: 2vmin;
+                    color: $Light-Purple;
+                    font-size: 5vmin;
+                  }
+                  
+                  .fa-codepen {
+                    margin: 2vmin;
+                    color: $Light-Purple;
+                    font-size: 5vmin;
+                  }
+            }
+        }
+
+        .item2 {
+            text-align: center;
+            padding: 0 5vmin 0 5vmin;
+            @media (min-width: 1024px) {
+                margin: 0;
+            }
+
+            button {
+                margin: 3vmin 0 0 0;
+            }
+        }
+    }
+
+}

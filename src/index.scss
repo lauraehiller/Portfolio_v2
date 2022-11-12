@@ -48,13 +48,17 @@ img {
 
 /*Buttons*/
 button {
-  padding: 2px 10px 2px 10px;
+  margin: 3vmin 0 0 0;
+  padding: 15px 30px 15px 30px;
   border: 2px solid $Light-Purple;
   border-radius: 5px;
   background-color: transparent;
   color: $Light-Purple;
   font-family: $Montserrat;
-  font-size: 3vmin;
+  font-size: 4vmin;
+  @media (min-width: 1024px) {
+    font-size: 2.5vmin;
+  }
 }
 
 button:hover {
@@ -111,6 +115,15 @@ h3 {
   color: $White;
   font-family: $Alumni;
   font-size: 5vmin;
+}
+
+h5 {
+  color: $White;
+  font-family: $Alumni;
+  font-size: 8vmin;
+  @media (min-width: 1024px) {
+    font-size: 5vmin;
+  }
 }
 
 p {
