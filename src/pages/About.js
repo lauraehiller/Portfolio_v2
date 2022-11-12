@@ -8,7 +8,7 @@ function About() {
           <h2>About Me</h2>
           <div className="container">
             <div className="item1">
-              <p>Hi, Laura here. I'm a Software Developer with a creative streak and an aptitude for writing 
+              <p>Hi, Laura here. I'm an early career Software Developer with a creative streak and an aptitude for writing 
                 <span className="styled-text"> reusable and efficient code.  </span>  
               </p>
               <br/>
@@ -20,6 +20,10 @@ function About() {
               <br/>
               <p>Recently I have been working as a <span className="styled-text">Web Developer</span> for PV Magazine, and 
                 volunteering as <span className="styled-text">Lead WebGL Dev Intern (Frontend)</span> for SpaceLab.
+              </p>
+              <br/>
+              <p>Think I would be a good fit for a project?  Don't hesitate to reach out!  I'm always looking for 
+                 opportunities to grow.
               </p>
               <br/>
               <button>Contact Me</button>
