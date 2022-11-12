@@ -19,7 +19,7 @@ function Contact() {
             </div>
             <div className="item2">
                 <h5>Or Send Me An Email</h5>
-                <button>Contact Me</button>
+                <button><a className="contact-form" href="mailto:Hillerelaura@gmail.com" subject="Personal Site Contact form entry">Contact Me</a></button>
             </div>
         </div>
 

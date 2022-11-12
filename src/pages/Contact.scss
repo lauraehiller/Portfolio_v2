@@ -65,6 +65,15 @@
 
             button {
                 margin: 3vmin 0 0 0;
+                a {
+                    color: $Light-Purple;
+                    font-family: $Montserrat;
+                    text-decoration: none;
+                    font-size: 4vmin;
+                    @media (min-width: 1024px) {
+                      font-size: 2.5vmin;
+                    }
+                }
             }
         }
     }
