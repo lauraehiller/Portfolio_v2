@@ -8,7 +8,7 @@ class Hamburger extends React.Component {
 
   render () { //width={ '20%' }
     return (
-      <Menu right >
+      <Menu right burgerButtonClassName={ this.props.visible ? "bm-burger-button" : "invisible"}>
         <div className="bm-item-list">
           <div className="bm-item">
             <a id="about" href="/about">About</a>

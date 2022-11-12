@@ -23,8 +23,8 @@ const Navigation = () => {
 
   return (
     <>
-      <div className="hamburger-wrap">
-        <Hamburger />
+      <div className="hamburger-wrap" style={{top: visible ? '0' : '-100px'}}>
+        <Hamburger visible={visible}/>
       </div>
       <nav className="nav-wrap" style={{
           top: visible ? '0' : '-100px', 
@@ -45,28 +45,5 @@ const Navigation = () => {
     </>
   )
 }
-
-
-/*function Navigation() {
-  return (
-    <>
-      <div className="hamburger-wrap">
-        <Hamburger />
-      </div>
-      <nav className="nav-wrap">
-        <div className="logo-container">
-          <img src={logo} alt="White dragon logo"/>
-        </div>
-        <ul className="nav-links">
-          <li><a href="/about">About</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/Experience">Experience</a></li>
-          <li><a href="/Contact">Contact</a></li>
-        </ul>
-        <a href="/Home"><i className="fa-regular fa-hand-point-up"></i></a>
-      </nav>
-    </>
-  )
-};*/
 
 export default Navigation;
