@@ -1,0 +1,17 @@
+@use '../../App';
+
+/*Footer*/
+
+.footer {
+  padding: 0 0 1vmin 0;
+  background: radial-gradient(
+        500px 500px at top right, 
+         rgba(26, 0, 68, 1.0) 0%,
+         rgba(20,20,20,0) 100%
+    );
+}
+
+.footer p{
+  font-family: App.$Montserrat;
+  font-size: 2vmin;
+}

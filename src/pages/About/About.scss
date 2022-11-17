@@ -1,0 +1,51 @@
+@use '../../App';
+/*About*/
+
+.about-section{
+  @include App.sectionPadding;
+  
+  background: radial-gradient(
+      100% 100% at top right, 
+      rgba(26, 0, 68, 1.0) 0%,
+      rgba(20,20,20,0) 100%
+    ), radial-gradient(
+      500px 500px at bottom left, 
+      rgba(26, 0, 68, 1.0) 0%,
+      rgba(20,20,20,0) 100%
+    );
+    
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 7fr 3fr;
+    }
+  }
+    
+  .paragraph {
+    margin: auto;
+    padding: 5vmin; 
+      
+    .styled-text {
+      color: App.$Light-Purple;
+    }
+  }
+    
+  .photo {
+    padding: 5vmin;
+  }
+    
+  img{
+    @include App.roundedBorders;
+    width: 50%;
+    height: auto;
+    margin: 1vmin;
+      
+    @media (min-width: 1024px) {
+      width: 100%;
+    }
+  }
+}
+  

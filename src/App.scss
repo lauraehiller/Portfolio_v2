@@ -1,5 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Bebas+Neue&family=Montserrat&display=swap');
+
+/* Color Palette*/
+$White: rgb(229, 229, 229);
+$Light-Gray: rgb(153, 153, 153);
+$Light-Purple: rgb(144, 84, 244);
+$Medium-Purple: rgb(87, 39, 163);
+$Dark-Purple: rgba(26, 0, 68, 1.0);
+$Dark-Gray: rgb(20, 20, 20);
+
+$Bebas: 'Bebas Neue', cursive;
+$Alumni: 'Alumni Sans Pinstripe', sans-serif;
+$Montserrat: 'Montserrat', sans-serif;
+
+body {
+  height: 100%;
+  background: black;
+  font-size: 16px; 
+  font-family: $Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
 .App {
   text-align: center;
 }
+
+.header,section {
+  padding: 20px;
+  text-align: left;
+}
+
+@mixin sectionPadding {
+  padding: 50px 0px 50px 0px;
+  @media (min-width: 1024px) {
+    padding: 50px 250px 50px 250px;
+  }
+}
+
+@mixin roundedBorders {
+  border-radius: 5px;
+}
+
+/*Buttons*/
+button {
+  margin: 3vmin 0 0 0;
+  padding: 15px 30px 15px 30px;
+  border: 2px solid $Light-Purple;
+  border-radius: 5px;
+  background-color: transparent;
+  color: $Light-Purple;
+  font-family: $Montserrat;
+  font-size: 4vmin;
+  @media (min-width: 1024px) {
+    font-size: 2.5vmin;
+  }
+}
+
+button:hover {
+  background-color: rgba(173, 122, 255,40%);
+}
+
+/*Hidden class for animations*/
+.hidden {
+  display: none;
+}
+
+/*Filler class for flexbox stuff*/
+.filler {
+  flex: 1 1 auto;
+}
+
+/*Headings and Text*/
+/*
+H1: Hero content
+H2: Section headings
+H3: Job titles
+H4: Project titles
+*/
+
+h2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 10vmin;
+  margin: 5vmin;
+  color: $White;
+  font-family: $Bebas;
+  @media (min-width: 1024px) {
+    font-size: 7vmin;
+  }
+}
+
+h2:before, h2:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+  color: $White;
+}
+
+h2:before {
+  margin-right: 10px
+}
+
+h2:after {
+  margin-left: 10px
+}
+
+p {
+  color: $Light-Gray;
+  font-family: $Montserrat;
+  font-size: 3vmin;
+  line-height: 4vmin;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
 

@@ -1,11 +1,11 @@
 import './App.scss';
-import Header from './components/Header.js';
-import Hero from './components/Hero.js';
-import About from './pages/About.js';
-import Experience from './pages/Experience.js';
-import Projects from './pages/Projects.js';
-import Contact from './pages/Contact.js';
-import Footer from './components/Footer.js';
+import Header from './components/Header/Header.js';
+import Hero from './components/Hero/Hero.js';
+import About from './pages/About/About.js';
+import Experience from './pages/Experience/Experience.js';
+import Projects from './pages/Projects/Projects.js';
+import Contact from './pages/Contact/Contact.js';
+import Footer from './components/Footer/Footer.js';
 
 function App() {
   return (

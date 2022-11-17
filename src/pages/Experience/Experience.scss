@@ -1,0 +1,28 @@
+@use '../../App';
+/*Experience*/
+
+.experience-section {
+  @include App.sectionPadding;
+  
+    background: radial-gradient(
+      500px 500px at top right, 
+       rgba(26, 0, 68, 1.0) 0%,
+       rgba(20,20,20,0) 100%
+    ), radial-gradient(
+      500px 500px at bottom left, 
+       rgba(26, 0, 68, 1.0) 0%,
+       rgba(20,20,20,0) 100%
+    );
+    
+    .container {
+      margin: 0vmin 5vmin 0vmin 5vmin;
+      display: flex;
+      flex-direction: column;
+      padding: 0vmin 2vmin 0vmin 2vmin;
+      justify-content: center;
+      text-align: center;
+      @media (min-width: 1024px) {
+        margin: 0px 100px 0px 100px;
+      }
+    }
+  }
