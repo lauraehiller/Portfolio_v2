@@ -1,24 +1,24 @@
 @use '../../App';
 
-.featured-section {
+.featured-project {
 
   margin-bottom: 50px;
   padding: 0 4vmin 0 4vmin;
       
-    .featured-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      @media (min-width: 1024px) {
-        flex-wrap: nowrap;
-      }
+  .featured-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media (min-width: 1024px) {
+      flex-wrap: nowrap;
     }
+  }
     
-    .item1 {
-      padding: 2vmin;
-    }
+  .picture {
+    padding: 2vmin;
+  }
 
-    .featured-card {
+  .featured-card {
       width: 100%;
       height: auto;
       margin: 2vmin 0vmin;

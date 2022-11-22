@@ -4,9 +4,9 @@ import spacelabImg from '../../images/componentassets/projectassets/SpaceLab.png
 
 function Featured() {
     return (
-        <div className="featured-section">
+        <div className="featured-project">
             <div className="featured-container">
-                <div className="item1">
+                <div className="picture">
                     <div className="flex-center">
                         <img src={spacelabImg} alt="Large text that says SpaceLab over a starry background"/>
                     </div>
@@ -22,11 +22,11 @@ function Featured() {
                             </div>
                         </div>
                     </div>
-                        <div className="featured-body">
-                            <p>An educational and interactive 3D web app rendering 
-                                NASA/Caltech data from the K2 and Keplar 
-                                Missions on over 9,000 Exoplanets.</p>
-                        </div>
+                    <div className="featured-body">
+                        <p>An educational and interactive 3D web app rendering 
+                            NASA/Caltech data from the K2 and Keplar 
+                            Missions on over 9,000 Exoplanets.</p>
+                    </div>
                     <div className="featured-footer">
                             <p>React.js · Three.js · WebGL</p>
                     </div>

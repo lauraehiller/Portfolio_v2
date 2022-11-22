@@ -9,11 +9,11 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 
     .container {
         position: absolute;
-        top: 25%;
+        top: 10%;
         /*display: flex;
         align-items: center;
         justify-content: center;
@@ -38,13 +38,15 @@
         font-family: App.$Bebas;
         font-size: 20vmin;
         color: App.$White;
+        letter-spacing: .4rem;
         @media (min-width: 1024px) {
-          font-size: 20vmin;
+          font-size: 25vmin;
         }
       }
 
       p {
         font-size: 5vmin;
+        letter-spacing: .3rem;
         color: App.$Light-Purple;
         font-family: App.$Bebas;
       }

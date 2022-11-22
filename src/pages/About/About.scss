@@ -4,11 +4,11 @@
 .about-section{
   @include App.sectionPadding;
   
-  background: radial-gradient(
+  background: /*radial-gradient(
       100% 100% at top right, 
       rgba(26, 0, 68, 1.0) 0%,
       rgba(20,20,20,0) 100%
-    ), radial-gradient(
+    ), */radial-gradient(
       500px 500px at bottom left, 
       rgba(26, 0, 68, 1.0) 0%,
       rgba(20,20,20,0) 100%
