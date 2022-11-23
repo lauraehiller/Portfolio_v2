@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.scss';
 
-function Contact() {
+const Contact = () => {
     return (
       <section id="contact-section" >
           <h2>Contact</h2>

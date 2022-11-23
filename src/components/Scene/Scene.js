@@ -3,7 +3,7 @@ import './Scene.scss';
 import { Canvas  } from '@react-three/fiber';
 import Computer from './Computer.js';
 
-function Scene() {
+const Scene = () => {
 
     return (
         <div className="canvas-container">

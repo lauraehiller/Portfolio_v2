@@ -3,7 +3,7 @@ import Job from '../../components/Job/Job';
 import './Experience.scss';
 import {jobList} from './ExperienceHelper.js';
 
-function Experience() {
+const Experience = () => {
     return (
         <section id="experience-section">
         <h2>Experience</h2>

@@ -7,7 +7,7 @@ import Projects from './pages/Projects/Projects.js';
 import Contact from './pages/Contact/Contact.js';
 import Footer from './components/Footer/Footer.js';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />

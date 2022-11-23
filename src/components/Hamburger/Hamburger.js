@@ -5,7 +5,6 @@ import './Hamburger.scss';
 /*https://github.com/negomi/react-burger-menu#styling*/
 
 class Hamburger extends React.Component {
-
   render () { //width={ '20%' }
     return (
       <Menu right burgerButtonClassName={ this.props.visible ? "bm-burger-button" : "invisible"}>

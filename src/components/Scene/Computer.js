@@ -6,7 +6,7 @@ import { useGLTF, useVideoTexture } from '@react-three/drei'
 import glb from './Computer.glb';
 import code from './code.mp4';
 
-export default function Computer(props) {
+const Computer = (props) => {
   const { nodes, materials } = useGLTF(glb)
   const video = useVideoTexture(code)
   return (
@@ -24,4 +24,6 @@ export default function Computer(props) {
   )
 }
 
-useGLTF.preload(glb)
+export default Computer;
+
+useGLTF.preload(glb);

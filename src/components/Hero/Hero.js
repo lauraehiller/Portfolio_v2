@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.scss';
 import Scene from '../Scene/Scene.js';
 
-function Hero() {
+const Hero = () => {
     return (
         <div id="hero">
             <div className="container">

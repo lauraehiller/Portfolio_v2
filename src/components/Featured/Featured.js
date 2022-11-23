@@ -2,7 +2,8 @@ import React from 'react';
 import './Featured.scss';
 import spacelabImg from '../../images/componentassets/projectassets/SpaceLab.png';
 
-function Featured() {
+const Featured = () => {
+    
     return (
         <div className="featured-project">
             <div className="featured-container">

@@ -4,7 +4,7 @@ import Featured from '../../components/Featured/Featured.js';
 import {projectList} from './ProjectHelper.js';
 import './Projects.scss';
 
-function Projects() {
+const Projects = () => {
     return (
         <section id="projects-section">
         <h2>Projects</h2>

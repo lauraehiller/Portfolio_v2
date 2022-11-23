@@ -2,7 +2,7 @@ import React from 'react';
 import meImg from '../../images/Me.jpg';
 import './About.scss';
 
-function About() {
+const About = () => {
     return (
       <section id="about-section">
           <h2>About Me</h2>
