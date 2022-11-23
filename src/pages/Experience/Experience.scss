@@ -1,7 +1,7 @@
 @use '../../App';
 /*Experience*/
 
-.experience-section {
+#experience-section {
   @include App.sectionPadding;
   
     background: radial-gradient(

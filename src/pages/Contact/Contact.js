@@ -3,17 +3,16 @@ import './Contact.scss';
 
 function Contact() {
     return (
-      <section className="contact-section">
+      <section id="contact-section" >
           <h2>Contact</h2>
-
           <div className="container">
             <div className="social-media">
             <h5>Find Me On Social Media</h5>
                 <p>Send a message and say hi👋</p>
                 <div className="social-links-container">
-                    <i href="" className="fa-brands fa-linkedin-in"></i>
-                    <i href="" className="fa-brands fa-github"></i>
-                    <i href="" className="fa-brands fa-codepen"></i>
+                    <a href="https://www.linkedin.com/in/laura-e-hiller/"><i  className="fa-brands fa-linkedin-in" /></a>
+                    <a href="https://github.com/lauraehiller"><i  className="fa-brands fa-github" /></a>
+                    <a href="https://codepen.io/eofnums"><i className="fa-brands fa-codepen" /></a>
                 </div>
 
             </div>

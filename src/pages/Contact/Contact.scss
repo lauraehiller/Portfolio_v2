@@ -1,6 +1,6 @@
 @use '../../App';
 
-.contact-section{
+#contact-section {
     @include App.sectionPadding;
     
     text-align: center;

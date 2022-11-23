@@ -2,7 +2,6 @@
 
 ## Build With
 
-- React
-- Three.js
+- React-three/Fiber
+- React-three/Drei
 - Sass
-- TypeScript

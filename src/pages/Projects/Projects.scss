@@ -1,7 +1,7 @@
 /*Project*/
 @use '../../App';
 
-.project-section {
+#projects-section {
     @include App.sectionPadding;
 
     background: radial-gradient(
@@ -13,7 +13,6 @@
        rgba(26, 0, 68, 1.0) 0%,
        rgba(20,20,20,0) 100%
     );
-
 
     .container {
       display: flex;

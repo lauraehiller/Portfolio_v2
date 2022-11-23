@@ -1,40 +1,39 @@
 import React from 'react';
 import './ProjectCard.scss';
 
-class ProjectCard extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            isVisible: false
-        };
-    }
+const ProjectCard = (projectObject)  => {
+    const project = projectObject.project;
+    let name = project.name;
+    let projectLink = project.projectLink;
+    let imgUrl = project.imgUrl;
+    let imgAlt = project.imgAlt;
+    let description = project.description;
+    let tools = project.tools;
+    let hasGitHub = false;
+    if (project.gitHub) {
+		hasGitHub = true;
+	}
 
-    toggleVisibility = () => {
-        this.setState(prevstate => ({ isVisible: !prevstate.isVisible}));
-    }
-
-    render() {
-        return (
-            <div className="card">
-              <div className="card-header">  
-                <div className="card-title">
-                    <h4>{this.props.name}</h4>
-                    <div>
-                        <i src={this.props.projectLink} className="fa-solid fa-arrow-up-right-from-square"></i>
-                        <i className={this.props.github ? "fa-brands fa-github" : "hidden"}></i>
-                    </div>
+    return (
+        <div className="card">
+            <div className="card-header">  
+            <div className="card-title">
+                <h4>{name}</h4>
+                <div>
+                    <a href={projectLink}><i className="fa-solid fa-arrow-up-right-from-square"/></a>
+                    <a href={hasGitHub ? project.gitHub : ''}><i className={hasGitHub ? "fa-brands fa-github" : "hidden"}/></a>
                 </div>
-                <img  className="card-image" src={this.props.imgUrl} alt={this.props.imgAlt}></img>
-              </div>
-                <div className="card-body">
-                    <p>{this.props.description}</p>
-                </div>
-              <div className="card-footer">
-                    <p>{this.props.tools}</p>
-              </div>
             </div>
-        )
-    }
+            <img  className="card-image" src={imgUrl} alt={imgAlt}></img>
+            </div>
+            <div className="card-body">
+                <p>{description}</p>
+            </div>
+            <div className="card-footer">
+                <p>{tools}</p>
+            </div>
+        </div>
+    )
 }
 
 export default ProjectCard;

@@ -32,15 +32,15 @@ const Navigation = () => {
           boxShadow: atTop ? 'none' : '0 -15px 50px black'
           }}>
         <div className="logo-container">
-          <img src={logo} alt="White dragon logo"/>
+          <img href="#hero" src={logo} alt="White dragon logo"/>
         </div>
         <ul className="nav-links">
-          <li><a href="/about">About</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/Experience">Experience</a></li>
-          <li><a href="/Contact">Contact</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#experience-section">Experience</a></li>
+          <li><a href="#contact-section">Contact</a></li>
         </ul>
-        <a href="/Home"><i className="fa-regular fa-hand-point-up"></i></a>
+        <a href="#hero"><i className="fa-regular fa-hand-point-up"></i></a>
       </nav>
     </>
   )
