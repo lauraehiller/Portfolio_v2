@@ -37,6 +37,7 @@ code {
   text-align: left;
 }
 
+/*Mixins */
 @mixin sectionPadding {
   padding: 50px 0px 50px 0px;
   @media (min-width: 1024px) {
@@ -46,6 +47,45 @@ code {
 
 @mixin roundedBorders {
   border-radius: 5px;
+}
+
+@mixin p (
+    $color: $Light-Gray, 
+    $font: $Montserrat,
+    $size-s: 3vmin, 
+    $size-m: 2vmin,
+    $size-l: 1.7vmin
+  ){
+  color: $color;
+  font-size: $size-s;
+  font-family: $font;
+  @media (min-width: 1024px) {
+    font-size: $size-l;
+  }
+}
+
+@mixin flex (
+  $direction: row,
+  $justify: center,
+  $align: left
+){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+};
+
+.icon {
+  margin: 1vmin;
+  color: $Light-Purple;
+  font-size: 6vmin;
+  @media (min-width: 1024px) {
+    font-size: 3vmin;
+  }
+}
+.icon:hover {
+  transform: translateY(-3px);
+  transition: all .3s ease-in-out;
 }
 
 /*Buttons*/
@@ -77,12 +117,12 @@ button:hover {
   flex: 1 1 auto;
 }
 
-/*Headings and Text*/
 /*
-H1: Hero content
-H2: Section headings
-H3: Job titles
-H4: Project titles
+Headings and Text
+  H1: Hero content
+  H2: Section headings
+  H3: Job titles
+  H4: Project titles
 */
 
 h2 {
@@ -111,18 +151,6 @@ h2:before {
 
 h2:after {
   margin-left: 10px
-}
-
-p {
-  color: $Light-Gray;
-  font-family: $Montserrat;
-  font-size: 3vmin;
-  line-height: 4vmin;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
 }
 
 

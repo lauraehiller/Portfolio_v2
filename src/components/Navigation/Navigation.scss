@@ -8,6 +8,7 @@
 }
 
 .nav-wrap {
+    @include App.flex($direction: row, $justify: space-between, $align: center);
     height:70px;
     background: rgba(26, 0, 68, 0.4);
     position: fixed;
@@ -15,9 +16,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     z-index: 1;
     box-shadow: 0 -15px 50px black;
     backdrop-filter: blur(20px);
@@ -35,6 +33,7 @@
         width: auto;
         height: 36px;
         z-index: 2;
+
         @media (min-width: 1024px) {
             margin-left: 3vmin;
             height: 40px;
@@ -43,6 +42,7 @@
 
     .nav-links{
         display: none;
+
         @media (min-width: 1024px) {
             display: flex;
         }
@@ -74,6 +74,7 @@
     a {
         text-decoration: none;
         animation: .8s ease-in-out 0s infinite jump;
+        
         .fa-hand-point-up {
             display: none;
             color: App.$Light-Purple;
@@ -83,7 +84,7 @@
 
             @media (min-width: 1024px) {
                 display:  inline;
-            font-size: 3.5vmin;
+                font-size: 3.5vmin;
             }
         }
 

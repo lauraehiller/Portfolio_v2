@@ -20,8 +20,8 @@ const ProjectCard = (projectObject)  => {
             <div className="card-title">
                 <h4>{name}</h4>
                 <div>
-                    <a href={projectLink}><i className="fa-solid fa-arrow-up-right-from-square"/></a>
-                    <a href={hasGitHub ? project.gitHub : ''}><i className={hasGitHub ? "fa-brands fa-github" : "hidden"}/></a>
+                    <a href={projectLink}><i className="fa-solid fa-arrow-up-right-from-square icon"/></a>
+                    <a href={hasGitHub ? project.gitHub : ''}><i className={hasGitHub ? "fa-brands fa-github icon" : "hidden"}/></a>
                 </div>
             </div>
             <img  className="card-image" src={imgUrl} alt={imgAlt}></img>

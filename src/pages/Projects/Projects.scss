@@ -15,8 +15,7 @@
     );
 
     .container {
-      display: flex;
-      justify-content: center;
+      @include App.flex($justify: center);
       flex-wrap: wrap;
     }
   }

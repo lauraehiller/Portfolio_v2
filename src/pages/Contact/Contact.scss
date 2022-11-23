@@ -2,7 +2,6 @@
 
 #contact-section {
     @include App.sectionPadding;
-    
     text-align: center;
     background: radial-gradient(
         500px 500px at top left,
@@ -18,6 +17,7 @@
         color: App.$White;
         font-family: App.$Alumni;
         font-size: 8vmin;
+
         @media (min-width: 1024px) {
           font-size: 5vmin;
         }
@@ -25,66 +25,61 @@
 
     .container {
         margin: 8vmin 15vmin 5vmin 15vmin;
-        display: flex;
-        flex-direction: column;
+        @include App.flex($direction: column, $justify: space-between);
+
         @media (min-width: 1024px) {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
+            @include App.flex($direction: row, $justify: space-between);
         }
 
         .social-media {
             text-align: center;
             padding: 0 5vmin 0 5vmin;
             margin: 0 0 5vmin 0;
+
             @media (min-width: 1024px) {
                 margin: 0;
             }
 
             p {
-                font-size: 4vmin;
-                @media (min-width: 1024px) {
-                    font-size: 3vmin;
-                }
+                @include App.p($size-s: 4vmin, $size-l: 3vmin);
             }
 
             .social-links-container{
-                display: flex;
-                justify-content: center;
+                @include App.flex();
                 .fa-linkedin-in {
                     margin: 2vmin 2vmin 2vmin 0;
-                    color: App.$Light-Purple;
                     font-size: 5vmin;
-                  }
+                }
                   
-                  .fa-github {
+                .fa-github {
                     margin: 2vmin;
-                    color: App.$Light-Purple;
                     font-size: 5vmin;
-                  }
+                }
                   
-                  .fa-codepen {
+                .fa-codepen {
                     margin: 2vmin;
-                    color: App.$Light-Purple;
                     font-size: 5vmin;
-                  }
+                }
             }
         }
 
         .email {
             text-align: center;
             padding: 0 5vmin 0 5vmin;
+
             @media (min-width: 1024px) {
                 margin: 0;
             }
 
             button {
                 margin: 3vmin 0 0 0;
+
                 a {
                     color: App.$Light-Purple;
                     font-family: App.$Montserrat;
                     text-decoration: none;
                     font-size: 4vmin;
+                    
                     @media (min-width: 1024px) {
                       font-size: 2.5vmin;
                     }

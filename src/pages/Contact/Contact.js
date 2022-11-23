@@ -10,9 +10,9 @@ const Contact = () => {
             <h5>Find Me On Social Media</h5>
                 <p>Send a message and say hi👋</p>
                 <div className="social-links-container">
-                    <a href="https://www.linkedin.com/in/laura-e-hiller/"><i  className="fa-brands fa-linkedin-in" /></a>
-                    <a href="https://github.com/lauraehiller"><i  className="fa-brands fa-github" /></a>
-                    <a href="https://codepen.io/eofnums"><i className="fa-brands fa-codepen" /></a>
+                    <a href="https://www.linkedin.com/in/laura-e-hiller/"><i  className="fa-brands fa-linkedin-in icon" /></a>
+                    <a href="https://github.com/lauraehiller"><i  className="fa-brands fa-github icon" /></a>
+                    <a href="https://codepen.io/eofnums"><i className="fa-brands fa-codepen icon" /></a>
                 </div>
 
             </div>

@@ -15,8 +15,7 @@
     );
     
   .container {
-    display: flex;
-    flex-direction: column;
+    @include App.flex($direction: column);
 
     @media (min-width: 1024px) {
       display: grid;
@@ -27,7 +26,12 @@
   .paragraph {
     margin: auto;
     padding: 5vmin; 
-      
+    
+    p {
+      @include App.p($size-s: 3vmin, $size-l: 3vmin);
+      line-height: 4vmin;
+    }
+    
     .styled-text {
       color: App.$Light-Purple;
     }
@@ -35,17 +39,23 @@
     
   .photo {
     padding: 5vmin;
-  }
-    
-  img{
-    @include App.roundedBorders;
-    width: 50%;
-    height: auto;
-    margin: 1vmin;
-      
-    @media (min-width: 1024px) {
-      width: 100%;
+
+    .flex-center {
+      display: flex;
+      justify-content: center;
+    }
+
+    img{
+      @include App.roundedBorders;
+      width: 50%;
+      height: auto;
+      margin: 1vmin;
+        
+      @media (min-width: 1024px) {
+        width: 100%;
+      }
     }
   }
+  
 }
   

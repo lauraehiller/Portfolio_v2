@@ -64,8 +64,7 @@
   /* Wrapper for item list */
   .bm-item-list {
     padding: 0.8em;
-    display: flex;
-    flex-direction: column;
+    @include App.flex($direction: column, $justify: space-between);
   }
   
   /* Individual item */

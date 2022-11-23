@@ -12,6 +12,5 @@
 }
 
 .footer p{
-  font-family: App.$Montserrat;
-  font-size: 2vmin;
+  @include App.p($font: App.$Montserrat, $size-s: 2vmin, $size-l: 2vmin);
 }

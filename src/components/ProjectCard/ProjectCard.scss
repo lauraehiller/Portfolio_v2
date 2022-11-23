@@ -2,22 +2,19 @@
 @use '../../App';
 
 .card {
+    @include App.flex($direction: column, $justify: space-between);
     width: 100%;
     height: auto;
     margin: 2vmin 8vmin;
     padding: 4vmin;
     background: rgba(30,30,30,1.0);
-    justify-content: space-between;
-    flex-direction: column;
-    display: flex;
     box-shadow: 0 2px 8px black;
     text-align: left;
     transition: all .3s ease-in-out;
     border-radius: 5px;
+
     @media (min-width: 1024px) {
-      justify-content: space-between;
-      flex-direction: column;
-      display: flex;
+      @include App.flex($direction: column, $justify: space-between);
       width: 40vmin;
       margin: 2vmin;
       padding: 2vmin;
@@ -25,92 +22,63 @@
 
     .card-header {
       padding: 1vmin;
-    }
-    
-    .card-image {
-      width: 100%;
-      height: auto;
-      padding: 2vmin 2vmin 2vmin 2vmin;
-      @media (min-width: 1024px) {
-        padding: 0;
-      }
-    }
-    
-    .card-title {
-      margin: 0 0 2vmin 0;
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid App.$Light-Gray;
-  
-      h4 {
-        color: App.$White;
-        font-family: App.$Alumni;
-        font-size: 6vmin;
-        padding: 0 0 .1vmin 0vmin;
-  
+
+      .card-image {
+        width: 100%;
+        height: auto;
+        padding: 2vmin 2vmin 2vmin 2vmin;
+
         @media (min-width: 1024px) {
-          font-size: 4vmin;
+          padding: 0;
         }
       }
-    }
+      
+      .card-title {
+        @include App.flex($direction: row, $justify: space-between);
+        margin: 0 0 2vmin 0;
+        border-bottom: 1px solid App.$Light-Gray;
     
-    .fa-arrow-up-right-from-square {
-      margin: 1vmin;
-      color: App.$Light-Purple;
-      font-size: 6vmin;
-      @media (min-width: 1024px) {
-        font-size: 3vmin;
-      }
-    }
-    
-    .fa-github {
-      margin: 1vmin;
-      color: App.$Light-Purple;
-      font-size: 6vmin;
-      @media (min-width: 1024px) {
-        font-size: 3vmin;
-      }
-    }
-    
-    .card-body {
-      justify-content: space-between;
-      display: flex;
-      flex-direction: column;
-      padding: 1vmin;
-  
-      p {
-          font-size: 4vmin;
-          line-height: 1.3;
-          @media (min-width: 1024px) {
-            font-size: 2vmin;
-          }
-      }
-    }
-    
-    .card-footer {
-      justify-content: center;
-      flex-direction: column;
-      display: flex;
-      padding: 3vmin 1vmin 1vmin 1vmin;
-      @media (min-width: 1024px) {
-        padding: 2vmin 1vmin 0vmin 1vmin;
-      }
-  
-      p {
+        h4 {
           color: App.$White;
-          font-size: 3vmin;
+          font-family: App.$Alumni;
+          font-size: 6vmin;
+          padding: 0 0 .1vmin 0vmin;
+    
           @media (min-width: 1024px) {
-            font-size: 1.7vmin;
+            font-size: 4vmin;
           }
+        }
       }
-    }
-
   }
+    
+  .card-body {
+    @include App.flex($direction: column, $justify: space-between);
+    padding: 1vmin;
   
-  .card:hover {
-    box-shadow: 0 5px 15px black;
-    transition: all .3s ease-in-out;
+    p {
+      @include App.p($size-s: 4vmin, $size-l: 2vmin);
+      line-height: 1.3;
+    }
   }
+    
+  .card-footer {
+    @include App.flex($direction: column, $justify: center);
+    padding: 3vmin 1vmin 1vmin 1vmin;
+    
+    @media (min-width: 1024px) {
+      padding: 2vmin 1vmin 0vmin 1vmin;
+    }
+  
+    p {
+      @include App.p($color: App.$White, $size-s: 3vmin, $size-l: 1.7vmin);
+    }
+  }
+}
+  
+.card:hover {
+  box-shadow: 0 5px 15px black;
+  transition: all .3s ease-in-out;
+}
   
   
   

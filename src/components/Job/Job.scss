@@ -2,8 +2,7 @@
   @use '../../App';
 
   .job-wrapper {
-    display: flex;
-    flex-direction: column;
+    @include App.flex($direction: column, $justify: space-between);
     padding: 1vmin 2vmin 1vmin 2vmin;
     overflow: hidden;
     height: auto;
@@ -22,34 +21,33 @@
     padding: 1vmin;
 
     .job-header {
-        display: flex;
-        justify-content: space-between;
+      @include App.flex($justify: space-between);
 
-        h3 {
-          color: App.$White;
-          font-family: App.$Alumni;
-          font-size: 5vmin;
-        }
+      h3 {
+        color: App.$White;
+        font-family: App.$Alumni;
+        font-size: 5vmin;
+      }
     
-        p{
-            font-size: 2vmin;
-            margin: auto 0 auto 0;
-            color: App.$Light-Gray;
-        }
+      p{
+        @include App.p($color: App.$Light-Gray, $size-s: 2vmin, $size-l: 2vmin);
+        margin: auto 0 auto 0;
+      }
     }
       
     .job-body {
-        height: auto;
-        transition: all .5s ease-in-out;
-        p{
-            color: App.$Light-Purple;
-        }
+      height: auto;
+      transition: all .5s ease-in-out;
+      
+      p{
+        @include App.p($color: App.$Light-Purple, $size-s: 3vmin, $size-l: 3vmin);
+      }
     }
 
     .list-wrapper {
-        display: flex;
-        justify-content: left;
+      @include App.flex($direction: column, $justify: left);
     }
+    
     /*Lists*/
     ul {
       margin: 1vmin;
@@ -73,8 +71,3 @@
       font-family: App.$Montserrat;
     }
   }
-  
-  /*.job-wrapper:active {
-    height: 35vmin;
-    transition: all .5s ease-in-out;
-  }*/

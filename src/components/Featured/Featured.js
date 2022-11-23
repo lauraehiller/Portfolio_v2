@@ -18,8 +18,8 @@ const Featured = () => {
                         <div className="featured-title">
                             <h4>Exoplanetarium 3D</h4>
                             <div>
-                                <i src="" className="fa-solid fa-arrow-up-right-from-square"></i>
-                                <i className="fa-brands fa-github"></i>
+                                <a href="http://spacelab.space/projects"><i className="fa-solid fa-arrow-up-right-from-square icon"/></a>
+                                <a href="https://github.com/spacelabdev/Exoplanetarium-3D"><i className="fa-brands fa-github icon"/></a>
                             </div>
                         </div>
                     </div>
