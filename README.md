@@ -1,4 +1,4 @@
-![Computer displaying code](/src/images/componentassets/projectasets/portfolio_v2.png?raw=true "Portfolio V2")
+![Computer displaying code](/src/images/componentassets/projectassets/portfolio_v2.png?raw=true "Portfolio V2")
 
 # Lauraehiller.com
 
