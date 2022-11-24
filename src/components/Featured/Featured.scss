@@ -41,7 +41,7 @@
         padding: 1vmin;
 
         .featured-pre {
-          @include App.p($size-s: 2.5vmin, $size-l: 2.5vmin);
+          @include App.p($size-s: 4vmin, $size-l: 2.5vmin);
         }
           
         .featured-title {
@@ -52,7 +52,7 @@
           h4 {
             color: App.$White;
             font-family: App.$Alumni;
-            font-size: 6vmin;
+            font-size: 8vmin;
             padding: 0 0 .1vmin 0vmin;
         
             @media (min-width: 1024px) {
@@ -67,7 +67,7 @@
         padding: 1vmin;
       
         p {
-          @include App.p($size-s: 4vmin, $size-l: 2vmin);
+          @include App.p($size-s: 4.5vmin, $size-l: 2vmin);
           line-height: 1.3;
         }
       }
@@ -81,7 +81,7 @@
         }
       
         p {
-          @include App.p($color: App.$White, $size-s: 3vmin, $size-l: 2vmin); 
+          @include App.p($color: App.$White, $size-s: 3.5vmin, $size-l: 2vmin); 
         }
       }
       

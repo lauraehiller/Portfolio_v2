@@ -21,16 +21,22 @@
     padding: 1vmin;
 
     .job-header {
-      @include App.flex($justify: space-between);
+      @include App.flex($direction: column, $justify: space-between);
 
+      @media (min-width: 1024px) {
+        @include App.flex($justify: space-between);
+      }
       h3 {
         color: App.$White;
         font-family: App.$Alumni;
-        font-size: 5vmin;
+        font-size: 7vmin;
+        @media (min-width: 1024px) {
+          font-size: 5vmin;
+        }
       }
     
       p{
-        @include App.p($color: App.$Light-Gray, $size-s: 2vmin, $size-l: 2vmin);
+        @include App.p($color: App.$Light-Gray, $size-s: 4.5vmin, $size-l: 2vmin);
         margin: auto 0 auto 0;
       }
     }
@@ -40,7 +46,7 @@
       transition: all .5s ease-in-out;
       
       p{
-        @include App.p($color: App.$Light-Purple, $size-s: 3vmin, $size-l: 3vmin);
+        @include App.p($color: App.$Light-Purple, $size-s: 4.5vmin, $size-l: 3vmin);
       }
     }
 
@@ -57,17 +63,25 @@
 
     ul li::before {
       content: "ᐳ";
-      font-size: 2vmin;
+      font-size: 3vmin;
       color: App.$Light-Purple;
-      margin: 0vmin 1vmin 0vmin -2vmin;               
+      margin: 0vmin 2vmin 0vmin -2vmin;               
       display: inline-block;
       width: 1vmin;
+      @media (min-width: 1024px) {
+        font-size: 2vmin;
+        margin: 0vmin 1vmin 0vmin -2vmin;
+      }
     }
 
     li {
-      margin: 1vmin;
-      font-size: 2vmin;
+      margin: 1vmin 1vmin 3vmin 1vmin;
+      font-size: 4vmin;
       color: App.$Light-Gray;
       font-family: App.$Montserrat;
+      @media (min-width: 1024px) {
+        font-size: 2vmin;
+        margin: 1vmin;
+      }
     }
   }

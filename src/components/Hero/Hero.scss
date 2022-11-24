@@ -6,8 +6,8 @@
     @media (min-width: 1024px) {
       padding: 0px 250px 0px 250px;
     }*/
-    position: relative;
     @include App.flex($align: center);
+    position: relative;
     background: radial-gradient(
       100% 100% at bottom right, 
       rgba(26, 0, 68, 1.0) 0%,
@@ -16,18 +16,19 @@
 
     .container {
       position: absolute;
-      top: 10%;
+      top: 15%;
       padding: 50px 0px 50px 0px;
       z-index: 99;
 
       @media (min-width: 1024px) {
         padding: 0px 100px 20px 100px;
+        top: 10%;
       }
     }
 
     h1 {
       font-family: App.$Bebas;
-      font-size: 20vmin;
+      font-size: 16vmin;
       color: App.$White;
       letter-spacing: .4rem;
 
@@ -37,7 +38,7 @@
     }
 
     p {
-      @include App.p($font: App.$Bebas, $color: App.$Light-Purple, $size-s: 5vmin, $size-l: 5vmin);
+      @include App.p($font: App.$Bebas, $color: App.$Light-Purple, $size-s: 6vmin, $size-l: 5vmin);
       letter-spacing: .3rem;
     }
   }

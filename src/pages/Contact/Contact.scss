@@ -24,7 +24,7 @@
     }
 
     .container {
-        margin: 8vmin 15vmin 5vmin 15vmin;
+        margin: 8vmin 15vmin 0vmin 15vmin;
         @include App.flex($direction: column, $justify: space-between);
 
         @media (min-width: 1024px) {
@@ -48,17 +48,29 @@
                 @include App.flex();
                 .fa-linkedin-in {
                     margin: 2vmin 2vmin 2vmin 0;
-                    font-size: 5vmin;
+                    font-size: 8vmin;
+
+                    @media (min-width: 1024px) {
+                        font-size: 5vmin;
+                    }
                 }
                   
                 .fa-github {
                     margin: 2vmin;
-                    font-size: 5vmin;
+                    font-size: 8vmin;
+
+                    @media (min-width: 1024px) {
+                        font-size: 5vmin;
+                    }
                 }
                   
                 .fa-codepen {
                     margin: 2vmin;
-                    font-size: 5vmin;
+                    font-size: 8vmin;
+
+                    @media (min-width: 1024px) {
+                        font-size: 5vmin;
+                    }
                 }
             }
         }

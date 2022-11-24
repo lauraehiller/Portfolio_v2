@@ -3,11 +3,16 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
     position: fixed;
-    width: 36px;
-    height: 30px;
-    right: 36px;
+    width: 30px;
+    height: 25px;
+    right: 20px;
     top: 20px;
     transition: .5s, top .5s;
+    @media ((min-width: 768px) and (max-width: 1023px)) {
+      width: 50px;
+      height: 40px;
+    }
+
     @media (min-width: 1024px) {
         display: none;
     }
@@ -21,6 +26,7 @@
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
     background: App.$White;
+    border-radius: 2px;
   }
   
   /* Color/shape of burger icon bars on hover*/
@@ -30,8 +36,13 @@
   
   /* Position and sizing of clickable cross button */
   .bm-cross-button {
-    height: 24px;
-    width: 24px;
+    margin: 10px;
+    transform: scale(2.0);
+    
+    @media ((min-width: 768px) and (max-width: 1023px)) {
+      margin: 10px;
+      transform: scale(3.0);
+    }
   }
   
   /* Color/shape of close button cross */
@@ -51,9 +62,14 @@
   
   /* General sidebar styles */
   .bm-menu {
-    background: App.$Medium-Purple;
-    padding: 2.5em 1.5em 0;
+    background: radial-gradient(
+      100% 100% at bottom left, 
+      rgba(26, 0, 68, 1.0) 0%,
+      rgba(10,10,10,1.0) 100%
+    );
+    padding: 1.5em .5em 0;
     font-size: 1.15em;
+    box-shadow: -5px 0px 30px black;
   }
   
   /* Morph shape necessary with bubble or elastic */
@@ -63,19 +79,21 @@
   
   /* Wrapper for item list */
   .bm-item-list {
-    padding: 0.8em;
-    @include App.flex($direction: column, $justify: space-between);
+    padding: 10px;
+
+    @include App.flex($direction: column, $justify: center);
   }
   
   /* Individual item */
   .bm-item {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     a {
         color: App.$White; 
         text-align: left;
         text-decoration: none;
         font-family: App.$Montserrat;
         font-size: 8vmin;
+
         @media (min-width: 1024px) {
             font-size: 4vmin;
         }

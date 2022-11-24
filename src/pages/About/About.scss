@@ -28,13 +28,19 @@
     padding: 5vmin; 
     
     p {
-      @include App.p($size-s: 3vmin, $size-l: 3vmin);
-      line-height: 4vmin;
+      @include App.p($size-s: 4vmin, $size-l: 3vmin);
+      line-height: 5vmin;
+
+      @media (min-width: 1024px) {
+        @include App.p($size-s: 3vmin, $size-l: 3vmin);
+        line-height: 4vmin;
+      }
     }
     
     .styled-text {
       color: App.$Light-Purple;
     }
+
   }
     
   .photo {
@@ -47,7 +53,7 @@
 
     img{
       @include App.roundedBorders;
-      width: 50%;
+      width: 70%;
       height: auto;
       margin: 1vmin;
         

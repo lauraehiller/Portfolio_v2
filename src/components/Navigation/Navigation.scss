@@ -29,10 +29,16 @@
     }
       
     img {
-        margin-left: 36px;
-        width: auto;
+        margin-left: 20px;
+        width: 34px;
         height: 36px;
         z-index: 2;
+
+        @media ((min-width: 768px) and (max-width: 1023px)) {
+            margin-top: 10px;
+            width: 54px;
+            height: 56px;
+        }
 
         @media (min-width: 1024px) {
             margin-left: 3vmin;

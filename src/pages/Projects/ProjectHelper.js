@@ -60,7 +60,7 @@ export const projectList = [
         description:"A user friendly and responsive website that I designed for the client.",
         tools:"WordPress · HTML",
         projectLink:"https://myempoweredu.com/",
-        githubLink:""
+        githubLink:''
     }
 
 ];

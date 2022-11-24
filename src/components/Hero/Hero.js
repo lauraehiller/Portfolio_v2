@@ -6,8 +6,8 @@ const Hero = () => {
     return (
         <div id="hero">
             <div className="container">
-                <h1>Laura Hiller</h1>
-                <p>Software Engineer · Web Developer</p>
+                <h1>Laura&nbsp;Hiller</h1>
+                <p>Software&nbsp;Engineer · Web&nbsp;Developer</p>
             </div>
             <Scene />
         </div>

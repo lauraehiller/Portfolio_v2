@@ -32,7 +32,7 @@ const Navigation = () => {
           boxShadow: atTop ? 'none' : '0 -15px 50px black'
           }}>
         <div className="logo-container">
-          <img href="#hero" src={logo} alt="White dragon logo"/>
+          <a href="#hero"><img src={logo} alt="White dragon logo"/></a>
         </div>
         <ul className="nav-links">
           <li><a href="#about-section">About</a></li>

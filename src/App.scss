@@ -39,9 +39,14 @@ code {
 
 /*Mixins */
 @mixin sectionPadding {
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0px 0px 0px;
+
+  @media ((min-width: 768px) and (max-width: 1023px)) {
+    padding: 100px 0px 0px 0px;
+  }
+
   @media (min-width: 1024px) {
-    padding: 50px 250px 50px 250px;
+    padding: 100px 250px 0px 250px;
   }
 }
 
@@ -59,6 +64,7 @@ code {
   color: $color;
   font-size: $size-s;
   font-family: $font;
+
   @media (min-width: 1024px) {
     font-size: $size-l;
   }
@@ -79,6 +85,7 @@ code {
   margin: 1vmin;
   color: $Light-Purple;
   font-size: 6vmin;
+
   @media (min-width: 1024px) {
     font-size: 3vmin;
   }
@@ -98,6 +105,7 @@ button {
   color: $Light-Purple;
   font-family: $Montserrat;
   font-size: 4vmin;
+
   @media (min-width: 1024px) {
     font-size: 2.5vmin;
   }
@@ -132,6 +140,7 @@ h2 {
   margin: 5vmin;
   color: $White;
   font-family: $Bebas;
+
   @media (min-width: 1024px) {
     font-size: 7vmin;
   }

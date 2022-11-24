@@ -5,21 +5,21 @@ import './Hamburger.scss';
 /*https://github.com/negomi/react-burger-menu#styling*/
 
 class Hamburger extends React.Component {
-  render () { //width={ '20%' }
+  render () { //
     return (
-      <Menu right burgerButtonClassName={ this.props.visible ? "bm-burger-button" : "invisible"}>
+      <Menu right width={ '60%' } burgerButtonClassName={ this.props.visible ? "bm-burger-button" : "invisible"}>
         <div className="bm-item-list">
           <div className="bm-item">
-            <a id="about" href="/about">About</a>
+            <a id="about" href="#about-section">About</a>
           </div>
           <div className="bm-item">
-            <a id="projects" href="/projects">Projects</a>
+            <a id="projects" href="#projects-section">Projects</a>
           </div>
           <div className="bm-item">
-            <a id="experience" href="/experience">Experience</a>
+            <a id="experience" href="#experience-section">Experience</a>
           </div>
           <div className="bm-item">
-            <a id="contact" href="/contact">Contact</a>
+            <a id="contact" href="#contact-section">Contact</a>
           </div>
         </div>
       </Menu>

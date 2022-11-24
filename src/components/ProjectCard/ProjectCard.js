@@ -10,7 +10,7 @@ const ProjectCard = (projectObject)  => {
     let description = project.description;
     let tools = project.tools;
     let hasGitHub = false;
-    if (project.gitHub) {
+    if (project.githubLink) {
 		hasGitHub = true;
 	}
 
@@ -21,7 +21,7 @@ const ProjectCard = (projectObject)  => {
                 <h4>{name}</h4>
                 <div>
                     <a href={projectLink}><i className="fa-solid fa-arrow-up-right-from-square icon"/></a>
-                    <a href={hasGitHub ? project.gitHub : ''}><i className={hasGitHub ? "fa-brands fa-github icon" : "hidden"}/></a>
+                    <a href={hasGitHub ? project.githubLink : ''}><i className={hasGitHub ? "fa-brands fa-github icon" : "hidden"}/></a>
                 </div>
             </div>
             <img  className="card-image" src={imgUrl} alt={imgAlt}></img>
