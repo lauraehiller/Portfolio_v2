@@ -82,7 +82,7 @@ code {
 };
 
 .icon {
-  margin: 1vmin;
+  margin: 1vmin 0vmin 1vmin 2vmin;
   color: $Light-Purple;
   font-size: 6vmin;
 
@@ -90,6 +90,7 @@ code {
     font-size: 3vmin;
   }
 }
+
 .icon:hover {
   transform: translateY(-3px);
   transition: all .3s ease-in-out;
@@ -112,7 +113,8 @@ button {
 }
 
 button:hover {
-  background-color: rgba(173, 122, 255,40%);
+  background-color: rgba(173, 122, 255,20%);
+  transition: all .2s ease-in-out;
 }
 
 /*Hidden class for animations*/

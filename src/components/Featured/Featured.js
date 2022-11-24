@@ -1,6 +1,6 @@
 import React from 'react';
 import './Featured.scss';
-import spacelabImg from '../../images/componentassets/projectassets/SpaceLab.png';
+import exoplanetariumImg from '../../images/componentassets/projectassets/Exoplanetarium.png';
 
 const Featured = () => {
     
@@ -9,7 +9,7 @@ const Featured = () => {
             <div className="featured-container">
                 <div className="picture">
                     <div className="flex-center">
-                        <img src={spacelabImg} alt="Large text that says SpaceLab over a starry background"/>
+                        <img src={exoplanetariumImg} alt="Large text that says SpaceLab over a starry background"/>
                     </div>
                 </div>
                 <div className="featured-card">

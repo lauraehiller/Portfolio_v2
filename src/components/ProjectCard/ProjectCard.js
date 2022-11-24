@@ -15,7 +15,7 @@ const ProjectCard = (projectObject)  => {
 	}
 
     return (
-        <div className="card">
+        <div className="card" >
             <div className="card-header">  
             <div className="card-title">
                 <h4>{name}</h4>

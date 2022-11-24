@@ -1,3 +1,5 @@
+import spacelabImg from '../../images/componentassets/projectassets/SpaceLab.png';
+import portfolio_v2Img from '../../images/componentassets/projectassets/portfolio_v2.png';
 import firefliesImg from '../../images/componentassets/projectassets/Fireflies.jpg';
 import empoweredImg from '../../images/componentassets/projectassets/EmpoweredU.jpg';
 import sunriseImg from '../../images/componentassets/projectassets/Sunrise.jpg';
@@ -5,14 +7,34 @@ import websiteImg from '../../images/componentassets/projectassets/MyWebsite.png
 
 export const projectList = [
     {
+        name:"SpaceLab",
+        imgUrl: spacelabImg,
+        imgAlt:"An image",
+        description:"The SpaceLab website where you can learn about the organization, " +
+        "explore NASA and CalTech data on Exoplanets, and make donations.",
+        tools:"React.js · Node.js · Bootstrap",
+        projectLink:"http://spacelab.space/",
+        githubLink:"https://github.com/spacelabdev/spacelab-react"
+    },
+    {
         name:"Portfolio V2",
-        imgUrl: firefliesImg,
+        imgUrl: portfolio_v2Img,
         imgAlt:"An image",
         description:"The second iteration of my portfolio website." +  
         " Designed to be more accessible, more responsive, and more efficient.",
-        tools:"HTML · CSS · JavaScript · React",
+        tools:"React-three/drei · SCSS",
         projectLink:"https://lauraehiller.com/",
         githubLink:"https://github.com/lauraehiller"
+    },
+    {
+        name:"My Desk",
+        imgUrl: spacelabImg,
+        imgAlt:"An image",
+        description:"A 3D model of my desk that I designed to get practice " +
+        "modeling in Blender and to get familiar with React-three/fiber.",
+        tools:"React-three/fiber · Blender",
+        projectLink:"http://spacelab.space/",
+        githubLink:"https://github.com/spacelabdev/spacelab-react"
     },
     {
         name:"Webstyle",
@@ -37,8 +59,8 @@ export const projectList = [
         name:"3D World: Sunrise",
         imgUrl:sunriseImg,
         imgAlt:"An image",
-        description:"A project for Computer Graphics in which"+
-        "I wrote custom shaders to create the lighting effects and to"+
+        description:"A project for Computer Graphics in which "+
+        "I wrote custom shaders to create the lighting effects and to "+
         "interpolate the sky color (creating the sunrise/sunset aesthetic).",
         tools:"WebGL · HTML · CSS · JavaScript.",
         projectLink:"https://people.ucsc.edu/~lhiller/index.html/Assignment4/World.html",
