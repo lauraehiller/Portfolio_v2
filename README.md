@@ -1,4 +1,4 @@
-![Laura Hiller in large font](/images/componentassets/projectasets/portfolio_v2.png?raw=true "Title")
+![Computer displaying code](/src/images/componentassets/projectasets/portfolio_v2.png?raw=true "Portfolio V2")
 
 # Lauraehiller.com
 
