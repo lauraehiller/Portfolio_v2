@@ -13,9 +13,9 @@ export const featuredList = [
         name:"Exoplanetarium 3D",
         imgUrl: exoplanetariumImg,
         imgAlt:"Large text that says Exoplanetarium over a starry background",
-        description:"An educational and interactive 3D web app rendering "+
+        description:"An educational and interactive 3D web app that renders "+
         "NASA/Caltech data from the K2 and Keplar "+
-        "Missions on over 9,000 Exoplanets.",
+        "missions on over 9,000 Exoplanets.",
         tools:"React.js · Three.js · WebGL",
         projectLink:"http://spacelab.space/projects",
         githubLink:"https://github.com/spacelabdev/Exoplanetarium-3D"
@@ -28,7 +28,7 @@ export const projectList = [
         imgUrl: spacelabImg,
         imgAlt:"Large text that says SpaceLab over a starry background",
         description:"The SpaceLab website where you can learn about the organization, " +
-        "explore NASA and CalTech data on Exoplanets, and make donations.",
+        "explore NASA and CalTech data, and make donations.",
         tools:"React.js · Node.js · Bootstrap",
         projectLink:"http://spacelab.space/",
         githubLink:"https://github.com/spacelabdev/spacelab-react"
@@ -39,7 +39,7 @@ export const projectList = [
         imgAlt:"Large white text that says Laura Hiller over dark background",
         description:"The second iteration of my portfolio website." +  
         " Designed to be more accessible, more responsive, and more efficient.",
-        tools:"React-three/drei · SCSS",
+        tools:"React.js · Three.js · SCSS",
         projectLink:"#hero",
         githubLink:"https://github.com/lauraehiller/Portfolio_v2"
     },
@@ -47,8 +47,8 @@ export const projectList = [
         name:"My Desk",
         imgUrl: mydeskImg,
         imgAlt:"A dark room with a desk and bookshelf",
-        description:"A 3D model of my desk that I designed to get practice " +
-        "modeling in Blender and to get familiar with React-three/fiber.",
+        description:"A 3D model of my desk that I designed to practice " +
+        "modeling in Blender and to familiarize myself with React-three/fiber.",
         tools:"React-three/fiber · Blender",
         projectLink:"https://lauraehiller.github.io/my_desk/",
         githubLink:"https://github.com/lauraehiller/my_desk"
@@ -57,7 +57,8 @@ export const projectList = [
         name:"Webstyle",
         imgUrl:webstyleImg,
         imgAlt:"A white web page with black text",
-        description:"A fun website for trying out different color and font combinations.",
+        description:"A fun website for trying out different color and font "+
+        "combinations.  Designed as practice with JavaScript.",
         tools:"HTML · CSS · JavaScript",
         projectLink:"https://lauraehiller.github.io/WebStyleProject/",
         githubLink:"https://github.com/lauraehiller/WebStyleProject"
@@ -87,7 +88,7 @@ export const projectList = [
         name:"Portfolio V1",
         imgUrl:websiteImg,
         imgAlt:"Large text that says Laura Hiller",
-        description:"My first attempt at coding a portfolio website.  I've learned a lot since then!",
+        description:"The very first version of my portfolio website.",
         tools:"Bootstrap · HTML · CSS · Javascript",
         projectLink:"https://lauraehiller.github.io/Portfolio_v1/",
         githubLink:"https://github.com/lauraehiller/Portfolio_v1"
@@ -96,7 +97,7 @@ export const projectList = [
         name:"EmpoweredU",
         imgUrl:empoweredImg,
         imgAlt:"A person sitting with a laptop and cup of coffee",
-        description:"A user friendly and responsive website that I designed for the client.",
+        description:"A user friendly and responsive website that I designed for a client.",
         tools:"WordPress · HTML",
         projectLink:"https://myempoweredu.com/",
         githubLink:''
