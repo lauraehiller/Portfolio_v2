@@ -26,7 +26,7 @@ const About = () => {
                  opportunities to grow.
               </p>
               <br/>
-              <button>Contact Me</button>
+              <a href="#contact-section"><button>Contact Me</button></a>
           </div>
           <div className="photo">
               <div className="flex-center">
