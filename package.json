@@ -1,5 +1,6 @@
 {
   "name": "portfolio_v2",
+  "homepage": "http://lauraehiller.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

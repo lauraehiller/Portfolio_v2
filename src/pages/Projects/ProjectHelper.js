@@ -15,7 +15,7 @@ export const featuredList = [
         imgAlt:"Large text that says Exoplanetarium over a starry background",
         description:"An educational and interactive 3D web app that renders "+
         "NASA/Caltech data from the K2 and Keplar "+
-        "missions on over 9,000 Exoplanets.",
+        "missions on over 9,000 Exoplanets.  Currently under construction.",
         tools:"React.js · Three.js · WebGL",
         projectLink:"http://spacelab.space/projects",
         githubLink:"https://github.com/spacelabdev/Exoplanetarium-3D"
