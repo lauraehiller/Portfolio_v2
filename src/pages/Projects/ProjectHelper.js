@@ -1,12 +1,12 @@
-import spacelabImg from '../../images/componentassets/projectassets/SpaceLab.png';
-import portfolio_v2Img from '../../images/componentassets/projectassets/portfolio_v2.png';
-import firefliesImg from '../../images/componentassets/projectassets/Fireflies.jpg';
-import empoweredImg from '../../images/componentassets/projectassets/EmpoweredU.jpg';
-import sunriseImg from '../../images/componentassets/projectassets/Sunrise.jpg';
-import websiteImg from '../../images/componentassets/projectassets/MyWebsite.png';
-import mydeskImg from '../../images/componentassets/projectassets/my-desk.png';
-import webstyleImg from '../../images/componentassets/projectassets/webstyle.png';
-import exoplanetariumImg from '../../images/componentassets/projectassets/Exoplanetarium.png';
+import spacelabImg from '../../images/componentassets/SpaceLab.png';
+import portfolio_v2Img from '../../images/componentassets/portfolio_v2.png';
+import firefliesImg from '../../images/componentassets/Fireflies.jpg';
+import empoweredImg from '../../images/componentassets/EmpoweredU.jpg';
+import sunriseImg from '../../images/componentassets/Sunrise.jpg';
+import websiteImg from '../../images/componentassets/MyWebsite.png';
+import mydeskImg from '../../images/componentassets/my-desk.png';
+import webstyleImg from '../../images/componentassets/webstyle.png';
+import exoplanetariumImg from '../../images/componentassets/Exoplanetarium.png';
 
 export const featuredList = [
     {
