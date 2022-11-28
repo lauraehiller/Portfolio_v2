@@ -43,10 +43,12 @@
       .card-image {
         width: 100%;
         height: auto;
+        object-fit: cover;
         padding: 2vmin 2vmin 2vmin 2vmin;
 
         @media (min-width: 1024px) {
           padding: 0;
+          height: 20vmin;
         }
       }
   }

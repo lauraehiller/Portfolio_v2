@@ -19,6 +19,11 @@
         width: 100%;
         height: auto;
         border-radius: 5px;
+        object-fit: cover;
+        @media (min-width: 1024px) {
+          width: 80vmin;
+          height: 30vmin;
+        }
       }
     }
 

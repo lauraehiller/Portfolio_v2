@@ -1,35 +1,43 @@
 import React from 'react';
 import './Featured.scss';
-import exoplanetariumImg from '../../images/componentassets/projectassets/Exoplanetarium.png';
 
-const Featured = () => {
+const Featured = (featuredObject) => {
+    const project = featuredObject.featured;
+    let name = project.name;
+    let projectLink = project.projectLink;
+    let imgUrl = project.imgUrl;
+    let imgAlt = project.imgAlt;
+    let description = project.description;
+    let tools = project.tools;
+    let hasGitHub = false;
+    if (project.githubLink) {
+		hasGitHub = true;
+	}
     
     return (
         <div className="featured-project">
             <div className="featured-container">
                 <div className="picture">
                     <div className="flex-center">
-                        <img src={exoplanetariumImg} alt="Large text that says SpaceLab over a starry background"/>
+                        <img src={imgUrl} alt={imgAlt}/>
                     </div>
                 </div>
                 <div className="featured-card">
                     <div className="featured-header"> 
                         <p className="featured-pre">Featured</p> 
                         <div className="featured-title">
-                            <h4>Exoplanetarium 3D</h4>
+                            <h4>{name}</h4>
                             <div>
-                                <a href="http://spacelab.space/projects"><i className="fa-solid fa-arrow-up-right-from-square icon"/></a>
-                                <a href="https://github.com/spacelabdev/Exoplanetarium-3D"><i className="fa-brands fa-github icon"/></a>
+                                <a href={projectLink}><i className="fa-solid fa-arrow-up-right-from-square icon"/></a>
+                                <a href={hasGitHub ? project.githubLink : ''}><i className={hasGitHub ? "fa-brands fa-github icon" : "hidden"}/></a>
                             </div>
                         </div>
                     </div>
                     <div className="featured-body">
-                        <p>An educational and interactive 3D web app rendering 
-                            NASA/Caltech data from the K2 and Keplar 
-                            Missions on over 9,000 Exoplanets.</p>
+                        <p>{description}</p>
                     </div>
                     <div className="featured-footer">
-                            <p>React.js · Three.js · WebGL</p>
+                            <p>{tools}</p>
                     </div>
                 </div>
             </div>
