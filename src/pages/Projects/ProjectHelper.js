@@ -40,7 +40,7 @@ export const projectList = [
         description:"The second iteration of my portfolio website." +  
         " Designed to be more accessible, more responsive, and more efficient.",
         tools:"React-three/drei · SCSS",
-        projectLink:"https://lauraehiller.com/",
+        projectLink:"#hero",
         githubLink:"https://github.com/lauraehiller/Portfolio_v2"
     },
     {
