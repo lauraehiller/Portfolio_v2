@@ -89,8 +89,8 @@ export const projectList = [
         imgAlt:"Large text that says Laura Hiller",
         description:"My first attempt at coding a portfolio website.  I've learned a lot since then!",
         tools:"Bootstrap · HTML · CSS · Javascript",
-        projectLink:"https://lauraehiller.com/",
-        githubLink:"https://github.com/lauraehiller"
+        projectLink:"https://lauraehiller.github.io/Portfolio_v1/",
+        githubLink:"https://github.com/lauraehiller/Portfolio_v1"
     },
     {
         name:"EmpoweredU",
