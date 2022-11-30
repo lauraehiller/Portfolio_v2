@@ -7,18 +7,18 @@ import React, { useState, useEffect } from 'react';
 const Navigation = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-  const [atTop, setStyle] = useState(true);
+  const [top, setTop] = useState(true);
 
   useEffect (() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      setStyle(currentScrollPos < 10);
-      setVisible((prevScrollPos > currentScrollPos) || atTop);
+      setTop(currentScrollPos < 10);
+      setVisible((prevScrollPos > currentScrollPos) || top);
       setPrevScrollPos(currentScrollPos);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [prevScrollPos, visible, atTop]);
+  }, [prevScrollPos, visible, top]);
 
   return (
     <>
@@ -27,8 +27,8 @@ const Navigation = () => {
       </div>
       <nav className="nav-wrap" style={{
           top: visible ? '0' : '-100px', 
-          background: atTop ? 'transparent' : 'rgba(26, 0, 68, 0.4)',
-          boxShadow: atTop ? 'none' : '0 -15px 50px black'
+          background: top ? 'transparent' : 'rgba(26, 0, 68, 0.4)',
+          boxShadow: top ? 'none' : '0 -15px 50px black'
           }}>
         <div className="logo-container">
           <a href="#hero"><img src={logo} alt="White dragon logo"/></a>
