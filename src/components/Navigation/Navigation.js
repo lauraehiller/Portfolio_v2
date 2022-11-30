@@ -12,14 +12,13 @@ const Navigation = () => {
   useEffect (() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      setVisible((prevScrollPos > currentScrollPos) || currentScrollPos < 10);
       setStyle(currentScrollPos < 10);
-  
+      setVisible((prevScrollPos > currentScrollPos) || atTop);
       setPrevScrollPos(currentScrollPos);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [prevScrollPos, visible]);
+  }, [prevScrollPos, visible, atTop]);
 
   return (
     <>
