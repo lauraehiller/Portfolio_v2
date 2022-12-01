@@ -1,6 +1,6 @@
 @use '../../App';
 
-.hamburger-wrapper {
+.hamburger-wrap {
     display: flex;
 	@media (min-width: 1024px) {
 		display: none;

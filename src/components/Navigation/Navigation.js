@@ -1,4 +1,3 @@
-//import React, { useState } from 'react';
 import './Navigation.scss';
 import Hamburger from '../Hamburger/Hamburger.js';
 import logo from '../../images/Website_Logo.png';
@@ -19,10 +18,11 @@ const Navigation = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos, visible, top]);
+  // style={{top: visible ? '0' : '-100px'}}
 
   return (
     <>
-      <div className="hamburger-wrap" style={{top: visible ? '0' : '-100px'}}>
+      <div className="hamburger-wrap" >
         <Hamburger visible={visible}/>
       </div>
       <nav className="nav-wrap" style={{
