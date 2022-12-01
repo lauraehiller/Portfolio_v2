@@ -41,12 +41,12 @@
     transform: scale(2.0);
     
     @media ((min-width: 768px) and (max-width: 1023px)) {
-    z-index: 99;
+      z-index: 99;
       margin: 30px;
       transform: scale(3.0);
     }
     .fa-xmark {
-        color: App.$White;
+      color: App.$White;
     }
   }
 
