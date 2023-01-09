@@ -97,7 +97,7 @@ export const projectList = [
         name:"EmpoweredU",
         imgUrl:empoweredImg,
         imgAlt:"A person sitting with a laptop and cup of coffee",
-        description:"A user friendly and responsive website that I designed for a client.",
+        description:"A user friendly and responsive website made for a client.  Designed to be accessible to non tech-savvy contributors.",
         tools:"WordPress · HTML",
         projectLink:"https://myempoweredu.com/",
         githubLink:''

@@ -8,8 +8,8 @@ const About = () => {
           <h2>About Me</h2>
           <div className="container">
             <div className="paragraph">
-              <p>Hi, Laura here. I'm an early career Software Developer with a creative streak and a proclivity for writing 
-                <span className="styled-text"> modular and reusable  </span>  code.
+              <p>Hi, Laura here. I'm an early career <span className="styled-text">Software Developer</span> with a  
+              <span className="styled-text"> Bachelor's Degree</span> in Computer Science and an eye for Design.
               </p>
               <br/>
               <p>  
@@ -18,7 +18,7 @@ const About = () => {
                 applications that are <span className="styled-text">visually stunning, user-friendly, and efficient.</span>
               </p>
               <br/>
-              <p>Recently I have been working as <span className="styled-text">Lead WebGL Dev Intern (Frontend) </span> 
+              <p>Recently I have been working as <span className="styled-text">Lead Frontend/WebGL Developer </span> 
                for SpaceLab, and as a <span className="styled-text">Web Developer</span> for PV Magazine.
               </p>
               <br/>

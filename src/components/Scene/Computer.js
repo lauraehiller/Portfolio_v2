@@ -7,8 +7,8 @@ import glb from './Computer.glb';
 import code from './code.mp4';
 
 const Computer = (props) => {
-  const { nodes, materials } = useGLTF(glb)
-  const video = useVideoTexture(code)
+  const { nodes, materials } = useGLTF(glb);
+  const video = useVideoTexture(code);
   return (
     <group {...props} dispose={null}>
       <group position={[0.08, -0.18, -0.07]} rotation={[0, 0, -1.58]} scale={[0, -0.12, -0.22]}>
@@ -18,7 +18,7 @@ const Computer = (props) => {
       </group>
       <mesh geometry={nodes.Laptop.geometry} material={materials.Gray_Metal} position={[-0.3, -0.21, -0.11]} rotation={[0, 0, -1.58]} scale={[0.03, 0.54, 0.97]} />
       <mesh geometry={nodes.Screen.geometry} material={materials['Black_Metal.001']} position={[-0.82, 0.45, -0.11]} scale={[0.01, 0.55, 0.93]} >
-        <meshBasicMaterial map={video} toneMapped={false} map-flipY={false}/>
+          <meshBasicMaterial map={video} toneMapped={false} map-flipY={false}/>
       </mesh>
     </group>
   )

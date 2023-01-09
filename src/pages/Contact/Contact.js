@@ -7,7 +7,7 @@ const Contact = () => {
           <h2>Contact</h2>
           <div className="container">
             <div className="social-media">
-            <h5>Find Me On Social Media</h5>
+            <h5>Find Me Online</h5>
                 <p>Send a message and say hi👋</p>
                 <div className="social-links-container">
                     <a href="https://www.linkedin.com/in/laura-e-hiller/"><i  className="fa-brands fa-linkedin-in icon" /></a>

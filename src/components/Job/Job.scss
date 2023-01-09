@@ -56,22 +56,8 @@
     
     /*Lists*/
     ul {
-      margin: 1vmin;
-      list-style-type: none;
+      margin: 0vmin 1vmin 1vmin 2vmin;
       text-align: left;
-    }
-
-    ul li::before {
-      content: "ᐳ";
-      font-size: 3vmin;
-      color: App.$Light-Purple;
-      margin: 0vmin 2vmin 0vmin -2vmin;               
-      display: inline-block;
-      width: 1vmin;
-      @media (min-width: 1024px) {
-        font-size: 2vmin;
-        margin: 0vmin 1vmin 0vmin -2vmin;
-      }
     }
 
     li {
