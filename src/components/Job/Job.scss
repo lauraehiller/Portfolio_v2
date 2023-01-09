@@ -29,7 +29,7 @@
       h3 {
         color: App.$White;
         font-family: App.$Montserrat;
-        font-size: 4.2vmin;
+        font-size: 4vmin;
         @media (min-width: 1024px) {
           font-size: 5vmin;
           font-family: App.$Alumni;
@@ -37,7 +37,7 @@
       }
     
       p{
-        @include App.p($color: App.$Light-Gray, $size-s: 4.5vmin, $size-l: 2vmin);
+        @include App.p($color: App.$Light-Gray, $size-s: 4vmin, $size-l: 2vmin);
         margin: auto 0 auto 0;
       }
     }
