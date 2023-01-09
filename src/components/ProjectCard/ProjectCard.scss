@@ -30,12 +30,13 @@
     
         h4 {
           color: App.$White;
-          font-family: App.$Alumni;
-          font-size: 8vmin;
+          font-family: App.$Montserrat;
+          font-size: 6vmin;
           padding: 0 0 .1vmin 0vmin;
     
           @media (min-width: 1024px) {
             font-size: 4vmin;
+            font-family: App.$Alumni;
           }
         }
       }

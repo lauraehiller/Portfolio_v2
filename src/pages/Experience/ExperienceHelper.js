@@ -29,7 +29,7 @@ export const jobList = [
         ]
     },
     {
-        title: "Tutor - Computer Systems & Assembly",
+        title: "Computer Systems & Assembly, Tutor",
         company: "Univ. of California",
         dates: "Sept. 2019 - Dec. 2021",
         description: [
@@ -38,7 +38,7 @@ export const jobList = [
         ]
     },
     {
-        title:"Grader - Tech Writing for Engineers",
+        title:"Tech Writing for Engineers, Grader",
         company:"Univ. of California",
         dates:"Sept. 2021 - Mar. 2022",
         description: [
@@ -46,7 +46,7 @@ export const jobList = [
         ]
     },
     {
-        title:"Tutor - Introduction to 3D Animation",
+        title:"Introduction to 3D Animation, Tutor",
         company:"Univ. of California",
         dates:"Sept. 2020 - Dec. 2020",
         description: [

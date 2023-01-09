@@ -15,11 +15,12 @@
 
     h5 {
         color: App.$White;
-        font-family: App.$Alumni;
-        font-size: 8vmin;
+        font-family: App.$Montserrat;
+        font-size: 6vmin;
 
         @media (min-width: 1024px) {
           font-size: 5vmin;
+          font-family: App.$Alumni;
         }
     }
 
