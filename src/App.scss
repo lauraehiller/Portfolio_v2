@@ -1,30 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Bebas+Neue&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Bebas+Neue&family=Montserrat&display=swap");
 
 /* Color Palette*/
 $White: rgb(229, 229, 229);
 $Light-Gray: rgb(153, 153, 153);
 $Light-Purple: rgb(144, 84, 244);
 $Medium-Purple: rgb(87, 39, 163);
-$Dark-Purple: rgba(26, 0, 68, 1.0);
+$Dark-Purple: rgba(26, 0, 68, 1);
 $Dark-Gray: rgb(20, 20, 20);
 
-$Bebas: 'Bebas Neue', 'Verdana';
-$Alumni: 'Alumni Sans Pinstripe', 'Verdana';
-$Montserrat: 'Montserrat', 'Verdana';
+$Bebas: "Bebas Neue", "Verdana";
+$Alumni: "Alumni Sans Pinstripe", "Verdana";
+$Montserrat: "Montserrat", "Verdana";
 
 body {
   height: 100%;
-  background: rgb(3,3,3);
-  font-size: 16px; 
-  font-family: $Montserrat, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
-  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-serif;
+  background: rgb(3, 3, 3);
+  font-size: 16px;
+  font-family: $Montserrat, -apple-system, BlinkMacSystemFont, "Roboto",
+    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -32,9 +32,51 @@ code {
   text-align: center;
 }
 
-.header,section {
+.header,
+section {
   padding: 20px;
   text-align: left;
+}
+
+#preload {
+  background: black url(images/Website_Logo.png) no-rep center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.preload {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.logo {
+  position: absolute;
+  top: 40%;
+  height: 10vmin;
+  animation: 2s logo infinite;
+}
+
+@keyframes logo {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
 }
 
 /*Mixins */
@@ -54,13 +96,13 @@ code {
   border-radius: 5px;
 }
 
-@mixin p (
-    $color: $Light-Gray, 
-    $font: $Montserrat,
-    $size-s: 3vmin, 
-    $size-m: 2vmin,
-    $size-l: 1.7vmin
-  ){
+@mixin p(
+  $color: $Light-Gray,
+  $font: $Montserrat,
+  $size-s: 3vmin,
+  $size-m: 2vmin,
+  $size-l: 1.7vmin
+) {
   color: $color;
   font-size: $size-s;
   font-family: $font;
@@ -70,16 +112,12 @@ code {
   }
 }
 
-@mixin flex (
-  $direction: row,
-  $justify: center,
-  $align: left
-){
+@mixin flex($direction: row, $justify: center, $align: left) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
-};
+}
 
 .icon {
   margin: 1vmin 0vmin 1vmin 2vmin;
@@ -93,7 +131,7 @@ code {
 
 .icon:hover {
   transform: translateY(-3px);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /*Buttons*/
@@ -113,8 +151,8 @@ button {
 }
 
 button:hover {
-  background-color: rgba(173, 122, 255,20%);
-  transition: all .2s ease-in-out;
+  background-color: rgba(173, 122, 255, 20%);
+  transition: all 0.2s ease-in-out;
 }
 
 /*Hidden class for animations*/
@@ -140,7 +178,8 @@ h2 {
   }
 }
 
-h2:before, h2:after{
+h2:before,
+h2:after {
   content: "";
   flex: 1 1;
   border-bottom: 1px solid;
@@ -149,10 +188,9 @@ h2:before, h2:after{
 }
 
 h2:before {
-  margin-right: 10px
+  margin-right: 10px;
 }
 
 h2:after {
-  margin-left: 10px
+  margin-left: 10px;
 }
-

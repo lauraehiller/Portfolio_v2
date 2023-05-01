@@ -1,9 +1,9 @@
-@use '../../App';
+@use "../../App";
 
 .featured-project {
-  margin-bottom: 50px;
+  margin-bottom: 7rem;
   padding: 0 4vmin 0 4vmin;
-      
+
   .featured-container {
     @include App.flex($direction: row, $justify: space-between);
     flex-wrap: wrap;
@@ -11,18 +11,19 @@
     @media (min-width: 1024px) {
       flex-wrap: nowrap;
     }
-    
+
     .picture {
       padding: 2vmin;
 
-      img{
+      img {
         width: 100%;
         height: auto;
         border-radius: 5px;
         object-fit: cover;
+        object-position: top;
         @media (min-width: 1024px) {
           width: 80vmin;
-          height: 30vmin;
+          height: 35vmin;
         }
       }
     }
@@ -41,25 +42,25 @@
         margin: 0vmin;
         padding: 1vmin 2vmin;
       }
-    
+
       .featured-header {
         padding: 1vmin;
 
         .featured-pre {
           @include App.p($size-s: 4vmin, $size-l: 2.5vmin);
         }
-          
+
         .featured-title {
           @include App.flex($direction: row, $justify: space-between);
           margin: 0 0 2vmin 0;
           border-bottom: 1px solid App.$Light-Gray;
-        
+
           h4 {
             color: App.$White;
             font-family: App.$Montserrat;
             font-size: 5vmin;
-            padding: 0 0 .1vmin 0vmin;
-        
+            padding: 0 0 0.1vmin 0vmin;
+
             @media (min-width: 1024px) {
               font-size: 5vmin;
               font-family: App.$Alumni;
@@ -67,17 +68,17 @@
           }
         }
       }
-        
+
       .featured-body {
         @include App.flex($direction: column, $justify: space-between);
         padding: 1vmin;
-      
+
         p {
           @include App.p($size-s: 4.5vmin, $size-l: 2vmin);
           line-height: 1.3;
         }
       }
-        
+
       .featured-footer {
         @include App.flex($direction: column, $justify: center);
         padding: 3vmin 1vmin 1vmin 1vmin;
@@ -85,12 +86,11 @@
         @media (min-width: 1024px) {
           padding: 2vmin 1vmin 0vmin 1vmin;
         }
-      
+
         p {
-          @include App.p($color: App.$White, $size-s: 3.5vmin, $size-l: 2vmin); 
+          @include App.p($color: App.$White, $size-s: 3.5vmin, $size-l: 2vmin);
         }
       }
-      
     }
   }
 }

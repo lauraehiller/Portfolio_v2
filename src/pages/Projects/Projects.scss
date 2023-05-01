@@ -1,21 +1,33 @@
 /*Project*/
-@use '../../App';
+@use "../../App";
 
 #projects-section {
-    @include App.sectionPadding;
+  @include App.sectionPadding;
 
-    background: radial-gradient(
-      500px 500px at bottom right,  
-      rgba(26, 0, 68, 1.0) 0%, 
-      rgba(20,20,20,0) 100%
-    ), radial-gradient(
-      500px 500px at top left, 
-       rgba(26, 0, 68, 1.0) 0%,
-       rgba(20,20,20,0) 100%
+  background: radial-gradient(
+      500px 500px at bottom right,
+      rgba(26, 0, 68, 1) 0%,
+      rgba(20, 20, 20, 0) 100%
+    ),
+    radial-gradient(
+      500px 500px at top left,
+      rgba(26, 0, 68, 1) 0%,
+      rgba(20, 20, 20, 0) 100%
     );
 
-    .container {
-      @include App.flex($justify: center);
-      flex-wrap: wrap;
+  .container {
+    @include App.flex($justify: center);
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .button-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+    .button {
+      transition: all 0.3s ease-in-out;
     }
   }
+}

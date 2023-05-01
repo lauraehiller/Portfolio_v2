@@ -1,24 +1,43 @@
-import React from 'react';
-import ProjectCard from '../../components/ProjectCard/ProjectCard.js';
-import Featured from '../../components/Featured/Featured.js';
-import {projectList} from './ProjectHelper.js';
-import {featuredList} from './ProjectHelper.js';
-import './Projects.scss';
+import React, { useState, useEffect } from "react";
+import ProjectCard from "../../components/ProjectCard/ProjectCard.js";
+import Featured from "../../components/Featured/Featured.js";
+import { projectList, featuredList } from "./ProjectHelper.js";
+import "./Projects.scss";
 
 const Projects = () => {
-    return (
-        <section id="projects-section">
-        <h2>Projects</h2>
-        {featuredList.map((featured) => (
-            <Featured key = {featured.name} featured={featured}/>
-        ))}
-        <div className="container">
-          {projectList.map((project) => (
-            <ProjectCard key = {project.name} project={project}/>
-          ))}
-        </div>
-    </section>
-    )
+  const [isVisible, setVisibility] = useState(false);
+  const [buttonText, setbuttonText] = useState("View Project Archive");
+
+  const showProjects = () => {
+    setVisibility(!isVisible);
   };
-  
-  export default Projects;
+
+  useEffect(() => {
+    isVisible
+      ? setbuttonText("Hide Project Archive")
+      : setbuttonText("View Project Archive");
+  }, [isVisible]);
+
+  return (
+    <section id="projects-section">
+      <h2>Projects</h2>
+      {featuredList.map((featured, index) => (
+        <Featured key={index} featured={featured} index={index} />
+      ))}
+      <div className="button-wrap">
+        <button onClick={showProjects}>{buttonText}</button>
+      </div>
+      <div className={`container`}>
+        {projectList.map((project) => (
+          <ProjectCard
+            key={project.name}
+            project={project}
+            isVisible={isVisible}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
