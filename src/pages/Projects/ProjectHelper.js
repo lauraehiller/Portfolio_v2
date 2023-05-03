@@ -1,6 +1,6 @@
-import Positonai from "../../images/componentassets/Positonai.png";
-import PosiVault from "../../images/componentassets/PosiVault.png";
-import spacelabImg from "../../images/componentassets/SpaceLab.png";
+import Positonai from "../../images/componentassets/Positonai-cut.png";
+import PosiVault from "../../images/componentassets/PosiVault-cut.png";
+import spacelabImg from "../../images/componentassets/SpaceLab-cut.png";
 import portfolio_v2Img from "../../images/componentassets/portfolio_v2.png";
 import firefliesImg from "../../images/componentassets/Fireflies.jpg";
 import empoweredImg from "../../images/componentassets/EmpoweredU.jpg";
@@ -35,7 +35,7 @@ export const featuredList = [
     description:
       "An educational and interactive 3D web app that renders " +
       "NASA/Caltech data from the K2 and Keplar " +
-      "missions on over 9,000 Exoplanets.  Currently under construction.",
+      "missions on over 9,000 Exoplanets.",
     tools: "React.js · Three.js · WebGL",
     projectLink: "http://spacelab.space/projects",
     githubLink: "https://github.com/spacelabdev/Exoplanetarium-3D",

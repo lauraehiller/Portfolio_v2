@@ -1,8 +1,7 @@
-import React, { Suspense } from "react";
+import React from "react";
 import "./Scene.scss";
 import { Canvas } from "@react-three/fiber";
 import DesktopComputer from "./DesktopComputer.js";
-import MobileComputer from "./MobileComputer.js";
 
 const Scene = () => {
   return (
@@ -13,19 +12,7 @@ const Scene = () => {
           position={[10, 10, 2]}
           intensity={3}
         />
-        <Suspense
-          fallback={
-            <MobileComputer
-              position={[0, -1.2, 1]}
-              rotation-y={Math.PI * -0.5}
-            />
-          }
-        >
-          <DesktopComputer
-            position={[0, -1.2, 1]}
-            rotation-y={Math.PI * -0.5}
-          />
-        </Suspense>
+        <DesktopComputer position={[0, -1.2, 1]} rotation-y={Math.PI * -0.5} />
       </Canvas>
     </div>
   );

@@ -8,28 +8,46 @@ $Medium-Purple: rgb(87, 39, 163);
 $Dark-Purple: rgba(26, 0, 68, 1);
 $Dark-Gray: rgb(20, 20, 20);
 
-$Bebas: "Bebas Neue", "Verdana";
-$Alumni: "Alumni Sans Pinstripe", "Verdana";
-$Montserrat: "Montserrat", "Verdana";
+$Bebas: "Bebas Neue", "Courier New", monospace;
+$Alumni: "Alumni Sans Pinstripe", "Courier New", monospace;
+$Montserrat: "Montserrat", "Courier New", monospace;
 
 body {
   height: 100%;
   background: rgb(3, 3, 3);
   font-size: 16px;
-  font-family: $Montserrat, -apple-system, BlinkMacSystemFont, "Roboto",
-    "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: $Montserrat, "Courier New", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Courier New", monospace;
 }
 
 .App {
   text-align: center;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+  transition: all 0.3s ease-in-out;
+}
+html::-webkit-scrollbar-track {
+  background: rgb(25, 25, 25);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(47, 21, 88);
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: $Medium-Purple;
 }
 
 .header,
@@ -144,6 +162,7 @@ button {
   color: $Light-Purple;
   font-family: $Montserrat;
   font-size: 4vmin;
+  cursor: pointer;
 
   @media (min-width: 1024px) {
     font-size: 2.5vmin;

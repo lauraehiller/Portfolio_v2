@@ -12,7 +12,7 @@ const About = () => {
             Hi, Laura here. I'm a{" "}
             <span className="styled-text">Software Developer</span> with a
             <span className="styled-text"> Bachelor's Degree</span> in Computer
-            Science and an eye for Design.
+            Science an exceptional eye for Design!
           </p>
           <br />
           <p>
@@ -20,26 +20,30 @@ const About = () => {
             <span className="styled-text">
               intersection of art and engineering
             </span>{" "}
-            is where I shine brightest. My goal on every project is to balance
-            aesthetics, functionality, and performance. The end result? Web
-            applications that are{" "}
+            is where I shine brightest. My primary objective on every project is
+            to balance aesthetics, functionality, accessibility, and
+            performance. The end result? Web applications that are
             <span className="styled-text">
+              {" "}
               visually stunning, user-friendly, and efficient.
             </span>
           </p>
           <br />
           <p>
-            Recently I have been working as a{" "}
-            <span className="styled-text">Full-Stack Software Developer</span>{" "}
-            at Positon,
-            <span className="styled-text"> Lead Frontend Developer </span>
-            at SpaceLab, and as a{" "}
-            <span className="styled-text">Web Developer</span> at PV Magazine.
+            My experience encompasses a wide variety of tools, ranging from
+            <span className="styled-text"> Front-End</span> to{" "}
+            <span className="styled-text"> Back-End </span>
+            development. A few technologies I've been working with recently are{" "}
+            <span className="styled-text">
+              React.js, Next.js, TypeScript, GraphQL, Tailwind, and Sass.
+            </span>
           </p>
+
           <br />
           <p>
-            Think I would be a good fit for a project or role? Don't hesitate to
-            reach out! I'm always looking for opportunities to learn and grow.
+            If you believe that I might be a good fit for a project or role,
+            please do not hesitate to get in touch! I am always looking for new
+            opportunities to learn and grow.
           </p>
           <br />
           <a href="#contact-section">

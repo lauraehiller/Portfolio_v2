@@ -27,7 +27,11 @@ const Projects = () => {
       <div className="button-wrap">
         <button onClick={showProjects}>{buttonText}</button>
       </div>
-      <div className={`container`}>
+      <div
+        className={`container ${
+          isVisible ? "container-grow" : "container-shrink"
+        }`}
+      >
         {projectList.map((project) => (
           <ProjectCard
             key={project.name}

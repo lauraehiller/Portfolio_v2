@@ -31,3 +31,13 @@
     }
   }
 }
+
+.container-grow {
+  height: 100%;
+  animation: grow 70ms;
+}
+
+.container-shrink {
+  height: 0;
+  animation: shrink 800ms;
+}

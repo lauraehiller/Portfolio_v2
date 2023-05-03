@@ -1,74 +1,79 @@
-  /*Job*/
-  @use '../../App';
+/*Job*/
+@use "../../App";
 
-  .job-wrapper {
+.job-wrapper {
+  @include App.flex($direction: column, $justify: space-between);
+  padding: 1vmin 2vmin 1vmin 2vmin;
+  overflow: hidden;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+  flex: 1 1 auto;
+  text-align: left;
+  border-bottom: 1px solid App.$Light-Gray;
+}
+
+.job-wrapper:hover {
+  background: App.$Medium-Purple;
+  border-bottom: 1px solid App.$Light-Purple;
+  cursor: pointer;
+}
+
+.job {
+  padding: 1vmin;
+
+  .job-header {
     @include App.flex($direction: column, $justify: space-between);
-    padding: 1vmin 2vmin 1vmin 2vmin;
-    overflow: hidden;
-    height: auto;
-    transition: all .5s ease-in-out;
-    flex: 1 1 auto;
-    text-align: left;
-    border-bottom: 1px solid App.$Light-Gray;
-  }
-  
-  .job-wrapper:hover {
-    background: App.$Medium-Purple;
-    border-bottom: 1px solid App.$Light-Purple;
-  }
-  
-  .job {
-    padding: 1vmin;
 
-    .job-header {
-      @include App.flex($direction: column, $justify: space-between);
-
-      @media (min-width: 1024px) {
-        @include App.flex($justify: space-between);
-      }
-      h3 {
-        color: App.$White;
-        font-family: App.$Montserrat;
-        font-size: 4vmin;
-        @media (min-width: 1024px) {
-          font-size: 5vmin;
-          font-family: App.$Alumni;
-        }
-      }
-    
-      p{
-        @include App.p($color: App.$Light-Gray, $size-s: 4vmin, $size-l: 2vmin);
-        margin: auto 0 auto 0;
-      }
+    @media (min-width: 1024px) {
+      @include App.flex($justify: space-between);
     }
-      
-    .job-body {
-      height: auto;
-      transition: all .5s ease-in-out;
-      
-      p{
-        @include App.p($color: App.$Light-Purple, $size-s: 4.5vmin, $size-l: 3vmin);
-      }
-    }
-
-    .list-wrapper {
-      @include App.flex($direction: column, $justify: left);
-    }
-    
-    /*Lists*/
-    ul {
-      margin: 0vmin 1vmin 1vmin 2vmin;
-      text-align: left;
-    }
-
-    li {
-      margin: 1vmin 1vmin 3vmin 1vmin;
-      font-size: 4vmin;
-      color: App.$Light-Gray;
+    h3 {
+      color: App.$White;
       font-family: App.$Montserrat;
+      font-size: 4vmin;
       @media (min-width: 1024px) {
-        font-size: 2vmin;
-        margin: 1vmin;
+        font-size: 5vmin;
+        font-family: App.$Alumni;
       }
     }
+
+    p {
+      @include App.p($color: App.$Light-Gray, $size-s: 4vmin, $size-l: 2vmin);
+      margin: auto 0 auto 0;
+    }
   }
+
+  .job-body {
+    height: auto;
+    transition: all 0.5s ease-in-out;
+
+    p {
+      @include App.p(
+        $color: App.$Light-Purple,
+        $size-s: 4.5vmin,
+        $size-l: 3vmin
+      );
+    }
+  }
+
+  .list-wrapper {
+    @include App.flex($direction: column, $justify: left);
+  }
+
+  /*Lists*/
+  ul {
+    margin: 0vmin 1vmin 1vmin 2vmin;
+    text-align: left;
+  }
+
+  li {
+    margin: 1vmin 1vmin 3vmin 1vmin;
+    font-size: 4vmin;
+    color: App.$Light-Gray;
+    font-family: App.$Montserrat;
+    @media (min-width: 1024px) {
+      font-size: 2vmin;
+      margin: 1vmin;
+    }
+  }
+}
