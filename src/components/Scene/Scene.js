@@ -12,6 +12,7 @@ const Scene = () => {
           position={[10, 10, 2]}
           intensity={3}
         />
+
         <DesktopComputer position={[0, -1.2, 1]} rotation-y={Math.PI * -0.5} />
       </Canvas>
     </div>

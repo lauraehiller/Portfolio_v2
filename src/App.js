@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import "./App.scss";
-import logo from "./images/Website_Logo.png";
 import Header from "./components/Header/Header.js";
 import Hero from "./components/Hero/Hero.js";
 import About from "./pages/About/About.js";
@@ -8,6 +7,7 @@ import Experience from "./pages/Experience/Experience.js";
 import Projects from "./pages/Projects/Projects.js";
 import Contact from "./pages/Contact/Contact.js";
 import Footer from "./components/Footer/Footer.js";
+import Loading from "./components/Loading/Loading.js";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,22 +21,19 @@ const App = () => {
     return () => window.removeEventListener("load", handleLoading);
   }, []);
 
-  if (isLoading)
-    return (
-      <div className="preload" id="preload">
-        <img src={logo} alt="logo" className="logo" />
-      </div>
-    );
+  if (isLoading) return <Loading />;
 
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Experience />
-      <Contact />
-      <Footer />
+      <Suspense fallback={<Loading />}>
+        <Header />
+        <Hero />
+        <About />
+        <Projects />
+        <Experience />
+        <Contact />
+        <Footer />
+      </Suspense>
     </div>
   );
 };

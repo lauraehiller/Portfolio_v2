@@ -9,7 +9,7 @@ import codeImg from "../../images/componentassets/codeImg.png";
 
 const DesktopComputer = (props) => {
   const { nodes, materials } = useGLTF(glb);
-  const video = useVideoTexture(codeVid, { loop: true });
+  const video = useVideoTexture(codeVid, { muted: true, loop: true });
   const texture = useTexture(codeImg);
 
   return (
@@ -27,11 +27,15 @@ const DesktopComputer = (props) => {
         position={[-0.82, 0.45, -0.11]}
         scale={[0.01, 0.55, 0.93]}
       >
-        <meshBasicMaterial
-          map={video ? video : texture}
-          toneMapped={false}
-          map-flipY={video ? false : true}
-        />
+        {video ? (
+          <meshBasicMaterial map={video} toneMapped={false} map-flipY={false} />
+        ) : (
+          <meshBasicMaterial
+            map={texture}
+            toneMapped={false}
+            map-flipY={true}
+          />
+        )}
       </mesh>
       <group
         position={[-0.7, -0.16, 0.65]}

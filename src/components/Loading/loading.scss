@@ -1,0 +1,40 @@
+#preload {
+  background: black url(../../images/Website_Logo.png) no-rep center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.preload {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.logo {
+  position: absolute;
+  top: 40%;
+  height: 10vmin;
+  animation: 2s logo infinite;
+}
+
+@keyframes logo {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
