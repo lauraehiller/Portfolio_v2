@@ -1,14 +1,14 @@
-import Positonai from "../../images/componentassets/Positonai-cut.png";
-import PosiVault from "../../images/componentassets/PosiVault-cut.png";
-import spacelabImg from "../../images/componentassets/SpaceLab-cut.png";
-import portfolio_v2Img from "../../images/componentassets/portfolio_v2.png";
-import firefliesImg from "../../images/componentassets/Fireflies.jpg";
-import empoweredImg from "../../images/componentassets/EmpoweredU.jpg";
-import sunriseImg from "../../images/componentassets/Sunrise.jpg";
-import websiteImg from "../../images/componentassets/MyWebsite.png";
-import mydeskImg from "../../images/componentassets/my-desk.png";
-import webstyleImg from "../../images/componentassets/webstyle.png";
-import exoplanetariumImg from "../../images/componentassets/Exoplanetarium.png";
+import Positonai from "../../images/componentassets/min/Positonai-cut-min.jpg";
+import PosiVault from "../../images/componentassets/min/PosiVault-cut-min.jpg";
+import spacelabImg from "../../images/componentassets/min/SpaceLab-cut-min.jpg";
+import portfolio_v2Img from "../../images/componentassets/min/portfolio_v2-min.jpg";
+import firefliesImg from "../../images/componentassets/min/Fireflies-min.jpg";
+import empoweredImg from "../../images/componentassets/min/EmpoweredU-min.jpg";
+import sunriseImg from "../../images/componentassets/min/Sunrise-min.jpg";
+import websiteImg from "../../images/componentassets/min/MyWebsite-min.jpg";
+import mydeskImg from "../../images/componentassets/min/my-desk-min.jpg";
+import webstyleImg from "../../images/componentassets/min/webstyle-min.jpg";
+import exoplanetariumImg from "../../images/componentassets/min/Exoplanetarium-min.jpg";
 
 export const featuredList = [
   {
