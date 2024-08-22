@@ -1,8 +1,17 @@
 export const jobList = [
   {
-    title: "Full-Stack Software Developer(Intern)",
+    title: "ITA Front-End Web Developer",
+    company: "California Commission on Teacher Credentialing",
+    dates: "March 2024 - Present",
+    description: [
+      "Worked as a member of the Web Team to administer daily maintenance and enhancements to the Commission’s public website and internal SharePoint sites.",
+      "Provided web accessibility guidance and assistance to Commission staff and ensure all public web pages and documents meet ADA standards.",
+    ],
+  },
+  {
+    title: "Full-Stack Software Developer Intern",
     company: "Positon",
-    dates: "Feb. 2023 - Present",
+    dates: "Feb. 2023 - August 2023",
     description: [
       "Built 6+ new features, encompassing both front-end UI and back-end database integration",
       "Created and implemented over 30 custom hooks and 11 custom components to enhance application functionality",
@@ -12,7 +21,7 @@ export const jobList = [
   {
     title: "Lead Frontend Developer",
     company: "SpaceLab",
-    dates: "Oct. 2022 - Present",
+    dates: "Oct. 2022 - August 2023",
     description: [
       "Led the architecture of 5+ new features, and 11+ reusable components, to improve application functionality",
       "Oversaw the development and maintenance of new products, technical documentation, and workflow processes to ensure quality and efficiency",
@@ -22,7 +31,7 @@ export const jobList = [
   {
     title: "Web Developer",
     company: "PV Magazine",
-    dates: "Aug. 2022 - Present",
+    dates: "Aug. 2022 - August 2023",
     description: [
       "Design and implement strategies for web growth including website design, Search Engine Optimization, marketing",
       "Implement web performance optimizations",
@@ -30,7 +39,7 @@ export const jobList = [
     ],
   },
   {
-    title: "Web Developer, Contract",
+    title: "Contract Web Developer",
     company: "EmpoweredU",
     dates: "Jan. 2021 - Mar. 2021",
     description: [
@@ -39,7 +48,7 @@ export const jobList = [
     ],
   },
   {
-    title: "Computer Systems & Assembly, Tutor",
+    title: "Computer Systems & Assembly Tutor",
     company: "Univ. of California",
     dates: "Sept. 2019 - Dec. 2021",
     description: [
@@ -48,7 +57,7 @@ export const jobList = [
     ],
   },
   {
-    title: "Tech Writing for Engineers, Grader",
+    title: "Tech Writing for Engineers Grader",
     company: "Univ. of California",
     dates: "Sept. 2021 - Mar. 2022",
     description: [
@@ -56,7 +65,7 @@ export const jobList = [
     ],
   },
   {
-    title: "Introduction to 3D Animation, Tutor",
+    title: "Introduction to 3D Animation Tutor",
     company: "Univ. of California",
     dates: "Sept. 2020 - Dec. 2020",
     description: [

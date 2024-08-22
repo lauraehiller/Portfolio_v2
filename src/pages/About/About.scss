@@ -1,19 +1,20 @@
-@use '../../App';
+@use "../../App";
 /*About*/
 
 #about-section {
   @include App.sectionPadding;
-  
+
   background: radial-gradient(
-      100% 100% at top right, 
-      rgba(26, 0, 68, 1.0) 0%,
-      rgba(20,20,20,0) 100%
-    ),radial-gradient(
-      500px 500px at bottom left, 
-      rgba(26, 0, 68, 1.0) 0%,
-      rgba(20,20,20,0) 100%
+      100% 100% at top right,
+      rgba(26, 0, 68, 1) 0%,
+      rgba(20, 20, 20, 0) 100%
+    ),
+    radial-gradient(
+      500px 500px at bottom left,
+      rgba(26, 0, 68, 1) 0%,
+      rgba(20, 20, 20, 0) 100%
     );
-    
+
   .container {
     @include App.flex($direction: column);
 
@@ -22,11 +23,11 @@
       grid-template-columns: 7fr 3fr;
     }
   }
-    
+
   .paragraph {
     margin: auto;
-    padding: 5vmin; 
-    
+    padding: 5vmin;
+
     p {
       @include App.p($size-s: 4vmin, $size-l: 3vmin);
       line-height: 5vmin;
@@ -36,13 +37,12 @@
         line-height: 4vmin;
       }
     }
-    
+
     .styled-text {
       color: App.$Light-Purple;
     }
-
   }
-    
+
   .photo {
     padding: 5vmin;
 
@@ -51,17 +51,15 @@
       justify-content: center;
     }
 
-    img{
+    img {
       @include App.roundedBorders;
       width: 70%;
       height: auto;
       margin: 1vmin;
-        
+
       @media (min-width: 1024px) {
         width: 100%;
       }
     }
   }
-  
 }
-  

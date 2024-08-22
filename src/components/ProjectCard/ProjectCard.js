@@ -4,7 +4,6 @@ import "./ProjectCard.scss";
 const ProjectCard = (projectObject) => {
   const { name, projectLink, imgUrl, imgAlt, description, tools, githubLink } =
     projectObject.project;
-  const hasGitHub = githubLink ? true : false;
   const isVisible = projectObject.isVisible;
 
   return (
@@ -13,12 +12,18 @@ const ProjectCard = (projectObject) => {
         <div className="card-title">
           <h4>{name}</h4>
           <div>
-            <a href={projectLink}>
-              <i className="fa-solid fa-arrow-up-right-from-square icon" />
-            </a>
-            <a href={hasGitHub ? githubLink : ""}>
+            <a href={projectLink ? projectLink : ""}>
               <i
-                className={hasGitHub ? "fa-brands fa-github icon" : "hidden"}
+                className={
+                  projectLink
+                    ? "fa-solid fa-arrow-up-right-from-square icon"
+                    : "hidden"
+                }
+              />
+            </a>
+            <a href={githubLink ? githubLink : ""}>
+              <i
+                className={githubLink ? "fa-brands fa-github icon" : "hidden"}
               />
             </a>
           </div>

@@ -11,6 +11,15 @@ import webstyleImg from "../../images/componentassets/min/webstyle-min.jpg";
 import exoplanetariumImg from "../../images/componentassets/min/Exoplanetarium-min.jpg";
 
 export const featuredList = [
+  /*{
+    name: "Commission on Teacher Credentialing Public Website",
+    imgUrl: Positonai,
+    imgAlt: "A website landing page",
+    description:
+      "Worked as a member of the Web Services Team to migrate the CTC's public website to a new CMS and perform a hollistic system upgrade.",
+    tools: "HTML · CSS · Sitefinity · CA Web · SharePoint",
+    projectLink: "https://positon.ai/",
+  },*/
   {
     name: "Positon.ai",
     imgUrl: Positonai,
@@ -61,7 +70,7 @@ export const projectList = [
     description:
       "The second iteration of my portfolio website." +
       " Designed to be more accessible, more responsive, and more efficient.",
-    tools: "React.js · Three.js · SCSS",
+    tools: "React.js · Three.js · Sass",
     projectLink: "#hero",
     githubLink: "https://github.com/lauraehiller/Portfolio_v2",
   },
@@ -73,8 +82,8 @@ export const projectList = [
       "A 3D model of my desk that I designed to practice " +
       "modeling in Blender and to familiarize myself with React-three/fiber.",
     tools: "React-three/fiber · Blender",
-    projectLink: "https://lauraehiller.github.io/my_desk/",
-    githubLink: "https://github.com/lauraehiller/my_desk",
+    projectLink: "https://lauraehiller.github.io/my-desk/",
+    githubLink: "https://github.com/lauraehiller/my-desk",
   },
   {
     name: "Webstyle",
@@ -83,7 +92,7 @@ export const projectList = [
     description:
       "A fun website for trying out different color and font " +
       "combinations.  Designed as practice with JavaScript.",
-    tools: "HTML · CSS · JavaScript",
+    tools: "HTML · CSS · Vanilla JavaScript",
     projectLink: "https://lauraehiller.github.io/WebStyleProject/",
     githubLink: "https://github.com/lauraehiller/WebStyleProject",
   },
@@ -95,9 +104,8 @@ export const projectList = [
       "A beautiful 3D world I designed for Computer Graphics. " +
       "Fun Fact: There are about 12,000 fireflies in this world.",
     tools: "Three.js · WebGL · Blender · HTML · CSS",
-    projectLink:
-      "https://people.ucsc.edu/~lhiller/index.html/Assignment%205/World.html",
-    githubLink: "",
+    projectLink: "https://lauraehiller.github.io/3D-fireflies/",
+    githubLink: "https://github.com/lauraehiller/3D-fireflies/",
   },
   {
     name: "3D World: Sunrise",
@@ -108,9 +116,8 @@ export const projectList = [
       "I wrote custom shaders to create the lighting effects and to " +
       "interpolate the sky color (creating the sunrise/sunset aesthetic).",
     tools: "WebGL · HTML · CSS · JavaScript.",
-    projectLink:
-      "https://people.ucsc.edu/~lhiller/index.html/Assignment4/World.html",
-    githubLink: "",
+    projectLink: "https://lauraehiller.github.io/3D-sunrise/",
+    githubLink: "https://github.com/lauraehiller/3D-sunrise/",
   },
   {
     name: "Portfolio V1",
@@ -128,7 +135,7 @@ export const projectList = [
     description:
       "A user friendly and responsive website made for a client.  Designed to be accessible to non tech-savvy contributors.",
     tools: "WordPress · HTML",
-    projectLink: "https://myempoweredu.com/",
+    projectLink: "", // Website: https://myempoweredu.com/ was taken down
     githubLink: "",
   },
 ];
