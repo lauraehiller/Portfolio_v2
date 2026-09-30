@@ -9,3 +9,10 @@ The second version of my portfolio website, designed to be more accessible, resp
 - React-three/Fiber
 - React-three/Drei
 - Sass
+
+## Naming Conventions
+
+Entity Names should be PascalCase and singular
+Component Names should be PascalCase and singular
+Lists of items should be camelCase and plural
+Variable names should be in camelCase
