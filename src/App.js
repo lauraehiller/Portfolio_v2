@@ -8,6 +8,7 @@ import Projects from "./pages/Projects/Projects.js";
 import Contact from "./pages/Contact/Contact.js";
 import Footer from "./components/Footer/Footer.js";
 import Loading from "./components/Loading/Loading.js";
+import { supabase } from "./lib/supabase";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -22,6 +23,17 @@ const App = () => {
     return () => {
       window.removeEventListener("load", handleLoad);
     };
+  }, []);
+
+  useEffect(() => {
+    async function testConnection() {
+      const { data, error } = await supabase.from("Tool").select("*");
+
+      console.log(data);
+      console.error(error);
+    }
+
+    testConnection();
   }, []);
 
   return loading ? (
