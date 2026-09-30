@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../../lib/supabase";
-import Job from "../../components/Job/Job";
+import ExperienceCard from "../../components/ExperienceCard/ExperienceCard";
 import "./Experience.scss";
 
 const ExperienceSection = () => {
-  const [Experiences, setExperience] = useState([]);
+  const [Experience, setExperience] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -34,8 +34,8 @@ const ExperienceSection = () => {
     <section id="experience-section">
       <h2>Experience</h2>
       <div className="container">
-        {Experiences.map((job) => (
-          <Job key={job.Id} job={job} />
+        {Experience.map((item) => (
+          <ExperienceCard key={item.Id} data={item} />
         ))}
       </div>
     </section>

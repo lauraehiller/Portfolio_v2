@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import "./Job.scss";
+import "./ExperienceCard.scss";
 
-const Job = (jobObject) => {
-  console.log(jobObject);
-  const job = jobObject.job;
-  let index = jobObject.index;
-  let title = job.Title;
-  // let company = job.company;
-  let startedOn = job.startedOn;
-  let endedOn = job.endedOn;
-  let description = job.Description;
+const Experience = (data) => {
+  //console.log(data);
+  const experience = data.data;
+  let index = data.index;
+  let title = experience.Title;
+  // let company = experience.company;
+  let startedOn = experience.startedOn;
+  let endedOn = experience.endedOn;
+  let description = experience.Description;
   let [isVisible, setVisible] = useState(index === 0 ? true : false);
 
   // const renderList = description.map((result) => {
@@ -25,15 +25,15 @@ const Job = (jobObject) => {
   };
 
   return (
-    <div className="job-wrapper">
-      <div className="job" onClick={toggleVisibility}>
-        <div className="job-header">
+    <div className="experience-wrapper">
+      <div className="experience" onClick={toggleVisibility}>
+        <div className="experience-header">
           <h3>{title}</h3>
           <p>
             {startedOn} - {endedOn}
           </p>
         </div>
-        <div className={isVisible ? "job-body" : "hidden"}>
+        <div className={isVisible ? "experience-body" : "hidden"}>
           {/* <p>{company}</p> */}
           <br />
           <div className="list-wrapper">
@@ -46,4 +46,4 @@ const Job = (jobObject) => {
   );
 };
 
-export default Job;
+export default Experience;

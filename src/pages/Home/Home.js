@@ -1,4 +1,6 @@
 import Hero from "../../components/Hero/Hero.js";
+import Experience from "../Experience/Experience.js";
+import Projects from "../Projects/Projects.js";
 import meImg from "../../images/Me-min-2024.jpg";
 import "./Home.scss";
 import "./Contact.scss";
@@ -96,6 +98,8 @@ const Home = () => {
     <div>
       <Hero />
       <About />
+      <Projects />
+      <Experience />
       <Contact />
     </div>
   );

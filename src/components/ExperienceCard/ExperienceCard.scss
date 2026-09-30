@@ -1,7 +1,7 @@
 /*Job*/
 @use "../../App";
 
-.job-wrapper {
+.experience-wrapper {
   @include App.flex($direction: column, $justify: space-between);
   padding: 1vmin 2vmin 1vmin 2vmin;
   overflow: hidden;
@@ -12,16 +12,16 @@
   border-bottom: 1px solid App.$Light-Gray;
 }
 
-.job-wrapper:hover {
+.experience-wrapper:hover {
   background: App.$Medium-Purple;
   border-bottom: 1px solid App.$Light-Purple;
   cursor: pointer;
 }
 
-.job {
+.experience {
   padding: 1vmin;
 
-  .job-header {
+  .experience-header {
     @include App.flex($direction: column, $justify: space-between);
 
     @media (min-width: 1024px) {
@@ -43,7 +43,7 @@
     }
   }
 
-  .job-body {
+  .experience-body {
     height: auto;
     transition: all 0.5s ease-in-out;
 
