@@ -4,7 +4,7 @@ import ExperienceCard from "../../components/ExperienceCard/ExperienceCard";
 import "./Experience.scss";
 
 const ExperienceSection = () => {
-  const [Experience, setExperience] = useState([]);
+  const [experienceList, setExperience] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const ExperienceSection = () => {
     <section id="experience-section">
       <h2>Experience</h2>
       <div className="container">
-        {Experience.map((item) => (
+        {experienceList.map((item) => (
           <ExperienceCard key={item.Id} data={item} />
         ))}
       </div>

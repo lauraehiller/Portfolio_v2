@@ -3,14 +3,8 @@ import "./ExperienceCard.scss";
 
 const Experience = (data) => {
   //console.log(data);
-  const experience = data.data;
-  let index = data.index;
-  let title = experience.Title;
-  // let company = experience.company;
-  let startedOn = experience.startedOn;
-  let endedOn = experience.endedOn;
-  let description = experience.Description;
-  let [isVisible, setVisible] = useState(index === 0 ? true : false);
+  const { Index, Title, StartedOn, EndedOn, Description } = data.data;
+  let [isVisible, setVisible] = useState(Index === 0 ? true : false);
 
   // const renderList = description.map((result) => {
   //   return (
@@ -28,9 +22,9 @@ const Experience = (data) => {
     <div className="experience-wrapper">
       <div className="experience" onClick={toggleVisibility}>
         <div className="experience-header">
-          <h3>{title}</h3>
+          <h3>{Title}</h3>
           <p>
-            {startedOn} - {endedOn}
+            {StartedOn} - {EndedOn}
           </p>
         </div>
         <div className={isVisible ? "experience-body" : "hidden"}>
@@ -38,7 +32,7 @@ const Experience = (data) => {
           <br />
           <div className="list-wrapper">
             {/* <ul>{renderList}</ul> */}
-            <p>{description}</p>
+            <p>{Description}</p>
           </div>
         </div>
       </div>

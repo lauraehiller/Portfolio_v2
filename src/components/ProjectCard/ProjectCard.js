@@ -1,41 +1,39 @@
 import React from "react";
 import "./ProjectCard.scss";
 
-const ProjectCard = (projectObject) => {
-  const { name, projectLink, imgUrl, imgAlt, description, tools, githubLink } =
-    projectObject.project;
-  const isVisible = projectObject.isVisible;
+const ProjectCard = (data) => {
+  // console.log(data.data);
+  const { Name, WebsiteLink, Description, GithubLink } = data.data;
+  const isVisible = data.isVisible;
 
   return (
     <div className={`card ${isVisible ? "grow" : "shrink"}`}>
       <div className="card-header">
         <div className="card-title">
-          <h4>{name}</h4>
+          <h4>{Name}</h4>
           <div>
-            <a href={projectLink ? projectLink : ""}>
+            <a href={WebsiteLink ? WebsiteLink : ""}>
               <i
                 className={
-                  projectLink
+                  WebsiteLink
                     ? "fa-solid fa-arrow-up-right-from-square icon"
                     : "hidden"
                 }
               />
             </a>
-            <a href={githubLink ? githubLink : ""}>
+            <a href={GithubLink ? GithubLink : ""}>
               <i
-                className={githubLink ? "fa-brands fa-github icon" : "hidden"}
+                className={GithubLink ? "fa-brands fa-github icon" : "hidden"}
               />
             </a>
           </div>
         </div>
-        <img className="card-image" src={imgUrl} alt={imgAlt}></img>
+        {/* <img className="card-image" src={imgUrl} alt={imgAlt}></img> */}
       </div>
       <div className="card-body">
-        <p>{description}</p>
+        <p>{Description}</p>
       </div>
-      <div className="card-footer">
-        <p>{tools}</p>
-      </div>
+      <div className="card-footer">{/* <p>{tools}</p> */}</div>
     </div>
   );
 };
